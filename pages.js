@@ -3,4 +3,5 @@ var monsterPages = {
     Dragon: "Dragon",
     Golem: "Golem",
     Cthulhu: "Cthulhu",
+    Alonso: "Alonso",
  };
