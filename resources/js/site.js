@@ -143,6 +143,7 @@ $(document).ready(function() {
         }
         event.preventDefault();
     });
+
     // Load Basic Page
     function LoadBasicPage() {     
         PageHash = document.URL.substr(document.URL.indexOf('#') + 1);
