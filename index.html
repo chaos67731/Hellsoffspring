@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="description" content="Search and learn about different monsters from around the world.">
+		<meta name="theme-color" content="#101010">
+		<link rel="manifest" href="manifest.json" />
+		<link rel="shortcut icon" href="icon.png" type="image/x-icon">
+		<link rel="icon" href="icon.png" type="image/x-icon">
+		<!-- jQuery -->
+		<script src="resources/js/jquery.js"></script>
+		<!-- Pages -->
+		<script src="pages.js"></script>
+		<!-- Nice Dropdowd -->
+		<script src="resources/js/chosen.jquery.min.js"></script>
+		<!-- Custom -->
+		<script src="resources/js/site.js"></script>
+		<!-- Style -->
+		<link rel="stylesheet" href="resources/css/bootstrap.css" />
+		<link rel="stylesheet" href="resources/css/chosen.min.css" />
+		<link rel="stylesheet" href="resources/css/site.css" />
+	</head>
+	<body class="ejs">
+		<div id="app">
+			<div class="appItem MainContent">
+				<div class="col wrap">
+					<div class="row align-items-center SiteHeader">
+						<div class="logo col-12 col-md-3 text-center">
+							<a href="/" title="" id="logoTitle">
+								<h1 class="m-0" id="logo" data-item="siteName"> </h1>
+							</a>
+						</div>
+						<div class="col-12 col-md-9 text-center" data-item="search">
+							<select class="DropDown" data-monster="results" name="monsters" id="monsters">
+								<option selected disabled value="home"> Pick a Monster </option>
+							</select>
+						</div>
+					</div>
+					<div class="row load" id="js-content"><!-- Contnet Goes Here --></div>
+				</div>
+			</div>
+			<div class="footer appItem">
+				<div id="test" data-item="test"></div>
+				<span data-action="WillRiter">Will Riters</span> <span data-item="siteName"></span> <span data-item="year"></span> <!-- - <a href="#About" data-item="page">About</a> - -->
+			</div>
+		</div>	
+	</body>
+</html>

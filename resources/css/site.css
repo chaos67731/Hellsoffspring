@@ -1,0 +1,199 @@
+/* Basic */
+body{
+  background-image: url(../../img/site/background-2.jpg);
+/*  background-repeat: repeat-y;
+  background-size: 100% 373px;
+  background-position: top center;*/
+}
+.img{
+  max-width: 100%;
+  height: 240px;
+}
+[data-option-array-index="1"] {
+    display: none !important;
+}
+
+ 
+
+br {
+  margin:2em 0;
+  line-height:3em;
+}
+.wrap{
+  max-width: 90%;
+  margin:  20px auto;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+}
+#app{
+  min-height:100vh;
+  display: flex;
+  flex-direction: column;   
+}
+
+.MainContent {
+  flex-grow: 1;
+}
+
+.footer {
+  text-align: center;
+  background: rgba(17, 17, 17, 0.72);
+  color: #fff;
+  padding: 6px 0;
+}
+.SiteHeader {
+    position: sticky;
+    top: 0px;
+    background: #000;
+    z-index: 10;
+}
+#logo {
+    font-size: 16px;
+    line-height: 1;
+    margin: 0;
+}
+[class*="col"] {
+  border: 1px solid red;
+}
+
+/* Drop Down */
+div#monsters_chosen {
+  color: #000;
+  width: 100% !important;
+}
+
+.DropDown{
+  text-transform: none;
+  background: #e4e4e4;
+  width: 100%;
+  border-radius: 0;
+  padding: 4px 6px;
+  margin: 4px 0;
+  font-size: 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Progress DangerScale */
+.DangerScaleWrap{
+position: relative;
+text-align: center;
+}
+.DangerScale {
+background: transparent;
+margin: 0 auto;
+width: 220px;
+height: 220px;
+display: inline-block;
+-webkit-transform: rotate(-90deg);
+transform: rotate(-90deg);
+text-align: center;
+}
+
+
+.DangerScaleValue {
+fill: none;
+}
+.DangerScaleMeter {
+stroke: #e6e6e6;
+fill: rgba(0, 0, 0, 0.64);
+}
+.DangerScaleValue {
+stroke: #69f23c ;
+stroke-linecap: round;
+}
+.MeterText {
+position: absolute;
+top: calc(50% - 1em);
+left: 0;
+right: 0;
+font-size: 40px;
+font-weight: 900;
+}
+/* SVG Colors */
+#percent1 , #percent2 , #percent3 , #percent4 , #percent5 , #percent6 , #percent7 , #percent8 , #percent9,  [id*="percent1"], [id*="percent2"],[id*="percent3"]  {
+stroke: #69f23c ;
+}
+[id*="percent4"],[id*="percent5"]{
+stroke: #f2cb3c;
+}
+[id*="percent6"],[id*="percent7"]{
+stroke: #f2a13c;
+}
+[id*="percent8"],[id*="percent9"], #percent100{
+stroke: #f13c59;
+}
+
+
+/* Search */
+.chosen-container-single .chosen-single {
+line-height: 3em;
+height: 3em;
+text-align: left;
+background: #fff;
+cursor: text;
+border-radius: 1px;
+margin: 4px 0;
+font-size: 16px;
+}
+
+.chosen-container-single .chosen-single b {
+display: none !important;
+}
+
+.chosen-container .chosen-results {
+font-size: 16px;
+}
+
+.chosen-container .chosen-results li {
+border-bottom: 1px solid #e4e3e3;
+padding: 14px 0;
+}
+
+.chosen-container .chosen-results li:last-child {
+border-bottom: none;
+}
+
+.chosen-container-single .chosen-drop {
+border-radius: 1px !important;
+box-shadow: none !important;
+}
+
+
+
+.chosen-container li:hover, li.highlighted {
+background: #ececec !important;
+color: #000 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
