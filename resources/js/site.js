@@ -20,7 +20,16 @@ $(document).ready(function() {
     $.each(monsterPages, function(file, name) {
         $('#monsters').append('<option value="' + file + '">' + name + '</option>');
     });
-    $("#monsters").chosen();
+    // var my_options = $("#monsters option");
+    // my_options.sort(function(a,b) {
+    //     if (a.text > b.text) return 1;
+    //     else if (a.text < b.text) return -1;
+    //     else return 0
+    // })
+    // $("#monsters").empty().append(my_options);
+    $("#monsters").chosen({
+        no_results_text: "Oops, nothing found!"
+    });
     // Load Content partials
     $.fn.WhatContent = function() {
         var MenuSetTo = $('#monsters').val();
@@ -41,7 +50,6 @@ $(document).ready(function() {
     });
     //based on the hash
     if (window.location.hash) {
-
         if (window.location.href.indexOf('#' + hash) > -1) {
             // select dropdown 
             $('#monsters option[value="' + hash + '"]').attr("selected", "selected");
