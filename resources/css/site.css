@@ -4,6 +4,8 @@ body{
 /*  background-repeat: repeat-y;
   background-size: 100% 373px;
   background-position: top center;*/
+  font-family: Verdana, Geneva, sans-serif;
+
 }
 .img{
   max-width: 100%;
@@ -185,9 +187,18 @@ color: #000 !important;
 
 
 
+/* Will's style */
 
-
-
+.subHeading {
+  text-transform: capitalize;
+  line-height: 1.2;
+  font-size: 30px;
+}
+.mainHeading {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+}
 
 
 
