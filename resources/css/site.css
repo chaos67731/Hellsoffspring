@@ -53,6 +53,12 @@ br {
     font-size: 16px;
     line-height: 1;
     margin: 0;
+        text-indent: -999999px;
+    background-image: url(../../img/site/MainLogo_W.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90px;
 }
 [class*="col"] {
   border: 1px solid rgba(39, 39, 39, 0.418);
