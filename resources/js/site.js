@@ -6,7 +6,7 @@ $(document).ready(function() {
     // Vars 1: site hash 2: the year 3: Page Title
     var hash = document.URL.substr(document.URL.indexOf('#') + 1),
         year = new Date().getFullYear(),
-        pageName = "Monsters Search",
+        pageName = "Hells Offspring",
         contentFade = 150;
     // Set Page Title
     document.title = pageName;
