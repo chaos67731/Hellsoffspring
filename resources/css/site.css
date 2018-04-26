@@ -22,7 +22,7 @@ br {
   line-height:3em;
 }
 .wrap{
-  max-width: 90%;
+  max-width: 1000px;
   margin:  20px auto;
   color: white;
   background: rgba(0, 0, 0, 0.5);
