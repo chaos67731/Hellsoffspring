@@ -43,8 +43,6 @@ $(document).ready(function() {
     if (window.location.hash) {
         if (window.location.href.indexOf('#About') > -1) {
             setTimeout(LoadBasicPage, 100);
-            $('[data-item="siteName"]').html(pageName);
-
         }
         else if (window.location.href.indexOf('#' + hash) > -1) {
             // select dropdown 
@@ -56,8 +54,6 @@ $(document).ready(function() {
             }).fail(function(){
                 $("#js-content").load('partials/error.html');
             });
-            $('[data-item="siteName"]').html(pageName);
-
         }
 
     } else {
@@ -94,7 +90,6 @@ $(document).ready(function() {
         $('.DangerScaleValue').attr("id", 'percent' + meter);
         // Page Title
         document.title = name + ' - ' + pageName;
-        $('[data-item="siteName"]').html(pageName);
         // Logo Title
         $('#logoTitle').attr("title", name + ' - ' + pageName);
         // chosen-focus-input
@@ -156,7 +151,6 @@ $(document).ready(function() {
         PageHash = document.URL.substr(document.URL.indexOf('#') + 1);
         $("#js-content").load('pages/html/'+PageHash+'.html');
             console.log(PageHash);
-            $('[data-item="siteName"]').html(pageName);
 
         if(jQuery.inArray(PageHash, monsterPages) !== -1){
             console.log("yes?");
