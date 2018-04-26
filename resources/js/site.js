@@ -41,7 +41,12 @@ $(document).ready(function() {
     });
     //based on the hash
     if (window.location.hash) {
-        if (window.location.href.indexOf('#' + hash) > -1) {
+        if (window.location.href.indexOf('#About') > -1) {
+            setTimeout(LoadBasicPage, 100);
+            $('[data-item="siteName"]').html(pageName);
+
+        }
+        else if (window.location.href.indexOf('#' + hash) > -1) {
             // select dropdown 
             $('#monsters option[value="' + hash + '"]').attr("selected", "selected");
             $.fn.WhatContent();
@@ -50,7 +55,9 @@ $(document).ready(function() {
                 $.fn.ShowMonsterContent();
             }).fail(function(){
                 $("#js-content").load('partials/error.html');
-            });;
+            });
+            $('[data-item="siteName"]').html(pageName);
+
         }
 
     } else {
@@ -87,6 +94,7 @@ $(document).ready(function() {
         $('.DangerScaleValue').attr("id", 'percent' + meter);
         // Page Title
         document.title = name + ' - ' + pageName;
+        $('[data-item="siteName"]').html(pageName);
         // Logo Title
         $('#logoTitle').attr("title", name + ' - ' + pageName);
         // chosen-focus-input
@@ -144,37 +152,22 @@ $(document).ready(function() {
     });
 
     // Load Basic Page
-    function LoadBasicPage() {     
+    function LoadBasicPage() {    
         PageHash = document.URL.substr(document.URL.indexOf('#') + 1);
         $("#js-content").load('pages/html/'+PageHash+'.html');
-        console.log(PageHash);
+            console.log(PageHash);
+            $('[data-item="siteName"]').html(pageName);
 
         if(jQuery.inArray(PageHash, monsterPages) !== -1){
             console.log("yes?");
         }
     }
+
+
     // 
     $('[data-item="page"]').click(function() {
         setTimeout(LoadBasicPage, 100);
     });
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 });
