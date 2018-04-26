@@ -1,6 +1,6 @@
 /* Basic */
 body{
-  background-image: url(../../img/site/background-3.jpg);
+  background-image: url(/resources/img/site/background-3.jpg);
   font-family: Verdana, Geneva, sans-serif;
 }
 .img{
@@ -50,7 +50,7 @@ br {
     line-height: 1;
     margin: 0;
         text-indent: -999999px;
-    background-image: url(../../img/site/MainLogo_W.png);
+    background-image: url(/resources/img/site/MainLogo_W.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

@@ -44,6 +44,7 @@ $(document).ready(function() {
         if (window.location.href.indexOf('#About') > -1) {
             setTimeout(LoadBasicPage, 100);
             var pageTheName = "About - ";
+            document.title = "About - Hell's Offspring";
 
         }
         else if (window.location.href.indexOf('#WillRiter') > -1) {
@@ -88,7 +89,7 @@ $(document).ready(function() {
     $.fn.ShowMonsterContent = function() {
         $('[data-item="name"]').html(name);
         // $('[data-item="name"]').load('pages/'+ hash +'.html #item-name');
-        $('[data-item="img"]').html('<img src="img/monsters/' + img + '" class="img" title="The ' + name + '" alt="' + name + '"/>');
+        $('[data-item="img"]').html('<img src="/monsters/' + img + '" class="img" title="The ' + name + '" alt="' + name + '"/>');
         $('[data-item="meter"]').html(meter + '%');
         $('[data-item="description"]').hide().html(description).delay(contentFade).slideDown(1000);
         $('[data-item="lives"]').hide().html(lives).delay(contentFade).slideDown(contentFade);

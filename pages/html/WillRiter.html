@@ -15,7 +15,7 @@
 
 			var contentFade = 150;
 			$('[data-item="name"]').html(name);
-	        $('[data-item="img"]').html('<img src="img/monsters/' + img + '" class="img" title="The ' + name + '" alt="' + name + '"/>');
+	        $('[data-item="img"]').html('<img src="/resources/img/' + img + '" class="img" title="The ' + name + '" alt="' + name + '"/>');
 	        $('[data-item="meter"]').html(meter + '%');
 	        $('[data-item="description"]').hide().html(description).delay(contentFade).slideDown(1000);
 	        $('[data-item="lives"]').hide().html(lives).delay(contentFade).slideDown(contentFade);
