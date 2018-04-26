@@ -5,4 +5,3 @@ var description = "a golem is an animated anthropomorphic being that is magicall
 var lives = "lives wherever the master tells it to ";
 var kill = "you can kill it by killing its master";
 var eats = "Eats nothing ";
-

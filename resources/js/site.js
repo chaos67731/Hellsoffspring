@@ -43,17 +43,14 @@ $(document).ready(function() {
     if (window.location.hash) {
         if (window.location.href.indexOf('#About') > -1) {
             setTimeout(LoadBasicPage, 100);
-            document.title = 'About - ' + pageName;
+            var pageTheName = "About - ";
 
         }
         else if (window.location.href.indexOf('#WillRiter') > -1) {
             setTimeout(LoadBasicPage, 100);
-            document.title = 'Will Riter - ' + pageName;
         }
         else if (window.location.href.indexOf('#Alonso') > -1) {
             setTimeout(LoadBasicPage, 100);
-            document.title = 'Alonso Solorzano - ' + pageName;
-
         }
         else if (window.location.href.indexOf('#' + hash) > -1) {
             // select dropdown 
@@ -66,7 +63,6 @@ $(document).ready(function() {
                 $("#js-content").load('partials/error.html');
             });
         }
-
     } else {
         $.fn.WhatContent();
     }
@@ -141,12 +137,17 @@ $(document).ready(function() {
         PageHash = document.URL.substr(document.URL.indexOf('#') + 1);
         $("#js-content").load('pages/html/'+PageHash+'.html');
         if(jQuery.inArray(PageHash, monsterPages) !== -1){
-        }      
+        }
+        document.title = pageTheName + pageName;
     }
     // 
     $('[data-item="page"]').click(function() {
         setTimeout(LoadBasicPage, 100);
     });
+    //  
+
+
+
 
 
 

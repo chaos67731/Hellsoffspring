@@ -6,6 +6,7 @@ https://github.com/tapio/live-server
 # Hellsoffspring To do list  
 * ~~gzip site~~
 * Facebook and Twitter share 
+* Make dropdown look better on mobile
 
 ## James Needs to do 
 * ~~Make basic pages work /site.js:147 & index.html:46~~
