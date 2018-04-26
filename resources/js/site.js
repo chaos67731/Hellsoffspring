@@ -53,6 +53,9 @@ $(document).ready(function() {
         else if (window.location.href.indexOf('#Alonso') > -1) {
             setTimeout(LoadBasicPage, 100);
         }
+        else if (window.location.href.indexOf('#404') > -1) {
+            setTimeout(LoadBasicPage, 100);
+        }        
         else if (window.location.href.indexOf('#' + hash) > -1) {
             // select dropdown 
             $('#monsters option[value="' + hash + '"]').attr("selected", "selected");

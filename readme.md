@@ -9,9 +9,8 @@ https://github.com/tapio/live-server
 * Make dropdown look better on mobile
 
 ## James Needs to do 
-* ~~Make basic pages work /site.js:147 & index.html:46~~
 * Make back button work 
-* Get content to pull from html files (pages/html/monsterName)
+* Google Analytics
 * ~~sort list in alphabetical order~~
 	* Do it by hand 
 * ~~progressive web app~~ 
@@ -20,6 +19,7 @@ https://github.com/tapio/live-server
 	* Also adding ssl
 * ~~Set up FTP~~
 	* Information in Google Doc
+* ~~Make basic pages work /site.js:147 & index.html:46~~
 
 ## Will Needs to do 
 * Come up with design 
@@ -37,3 +37,7 @@ https://github.com/tapio/live-server
 ## Bugs 
 * Page did not load once when picking a monster 
 * Mobile cant pick from dropdown when on page (/#about)
+
+### Not Doing Yet
+* Get content to pull from html files (pages/html/monsterName)
+
