@@ -44,6 +44,9 @@ $(document).ready(function() {
         if (window.location.href.indexOf('#About') > -1) {
             setTimeout(LoadBasicPage, 100);
         }
+        else if (window.location.href.indexOf('#WillRiter') > -1) {
+            setTimeout(LoadBasicPage, 100);
+        }
         else if (window.location.href.indexOf('#' + hash) > -1) {
             // select dropdown 
             $('#monsters option[value="' + hash + '"]').attr("selected", "selected");
@@ -122,26 +125,6 @@ $(document).ready(function() {
         $("#js-content").load('partials/start.html');
         var clean_uri = uri.substring(0, uri.indexOf("#"));
         window.history.replaceState({}, document.title, clean_uri);
-        }
-        event.preventDefault();
-    });
-
-    // Wills Page
-   $('[data-action="WillRiter"]').click(function() {
-        if (window.location.href.indexOf('#WillRiter') > -1) {}else{
-            parent.location.hash = '#WillRiter';
-            $("#js-content").load('partials/search.html');
-            $('body').addClass('SearchPage');
-            $('body').removeClass('StartPage');
-            $('#monsters').find('option:first-child').prop('selected', true).end().trigger('chosen:updated');    
-            var whash = document.URL.substr(document.URL.indexOf('#WillRiter') + 1);
-            setTimeout(function() {
-               $.getScript('pages/' + whash + '.js', function() {
-                    $.fn.ShowMonsterContent();
-                }).fail(function(){
-                    $("#js-content").load('partials/error.html');
-                });;
-            }, 30);
         }
         event.preventDefault();
     });
