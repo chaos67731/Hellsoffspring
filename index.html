@@ -24,7 +24,7 @@
 	</head>
 	<body class="ejs">
 		<div id="app">
-			<div class="appItem MainContent">
+			<div class="appItem MainWrap">
 				<div class="col wrap">
 
 					<header class="row align-items-center SiteHeader">
@@ -40,15 +40,30 @@
 						</nav>
 					</header>
 
-					<main class="row load" id="js-content"><!-- Contnet Goes Here --></main>
+					<main class="row load MainContent" id="js-content"><!-- Contnet Goes Here --></main>
 				</div>
 			</div>
 			<footer class="footer appItem">
 				<div id="test" data-item="test"></div>
-				<a href="#WillRiter" data-item="page">Will Riters</a> 
-				<span data-item="siteName"></span> 
-				<time data-item="year"></time> 
-				- <a href="#About" data-item="page">About</a> -
+				<div class="row col-12">
+					<div class="col-12 col-md-6">
+						<span data-item="siteName"></span> 
+						<time data-item="year"></time> 				
+					</div>	
+					<div class="row col-12 col-md-6">
+						<div class="col">
+							<nav class="nav flex-column text-left">
+								<a href="#WillRiter" class="nav-link" data-item="page">Will Riters</a>
+								<a href="#Alonso" class="nav-link" data-item="page">Alonso</a> 
+							</nav>							
+						</div>
+						<div class="col">
+							<nav class="nav flex-column text-left">
+								<a href="#About" class="nav-link" data-item="page">About</a> 
+							</nav>							
+						</div>						
+					</div>
+				</div>
 			</footer>
 		</div>	
 	</body>

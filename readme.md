@@ -8,7 +8,7 @@ https://github.com/tapio/live-server
 * Facebook and Twitter share 
 
 ## James Needs to do 
-* Make basic pages work /site.js:147 & index.html:46
+* ~~Make basic pages work /site.js:147 & index.html:46~~
 * Make back button work 
 * Get content to pull from html files (pages/html/monsterName)
 * ~~sort list in alphabetical order~~
@@ -22,8 +22,8 @@ https://github.com/tapio/live-server
 
 ## Will Needs to do 
 * Come up with design 
-* Make logos 
-* Make mascot
+* ~~Make logos~~
+* ~~Make mascot~~
 * Make list of first monsters (min: 25)
 * Make Pages for monsters 
 * ~~Set up loacl~~

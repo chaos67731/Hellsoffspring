@@ -43,9 +43,17 @@ $(document).ready(function() {
     if (window.location.hash) {
         if (window.location.href.indexOf('#About') > -1) {
             setTimeout(LoadBasicPage, 100);
+            document.title = 'About - ' + pageName;
+
         }
         else if (window.location.href.indexOf('#WillRiter') > -1) {
             setTimeout(LoadBasicPage, 100);
+            document.title = 'Will Riter - ' + pageName;
+        }
+        else if (window.location.href.indexOf('#Alonso') > -1) {
+            setTimeout(LoadBasicPage, 100);
+            document.title = 'Alonso Solorzano - ' + pageName;
+
         }
         else if (window.location.href.indexOf('#' + hash) > -1) {
             // select dropdown 
@@ -128,23 +136,19 @@ $(document).ready(function() {
         }
         event.preventDefault();
     });
-
     // Load Basic Page
-    function LoadBasicPage() {    
+    function LoadBasicPage() {
         PageHash = document.URL.substr(document.URL.indexOf('#') + 1);
         $("#js-content").load('pages/html/'+PageHash+'.html');
-            console.log(PageHash);
-
         if(jQuery.inArray(PageHash, monsterPages) !== -1){
-            console.log("yes?");
-        }
+        }      
     }
-
-
     // 
     $('[data-item="page"]').click(function() {
         setTimeout(LoadBasicPage, 100);
     });
+
+
 
 
 });
