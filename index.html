@@ -26,28 +26,26 @@
 	<body class="ejs">
 		<div id="app">
 			<div class="appItem MainWrap">
-				<div class="col wrap">
-
-					<header class="row align-items-center SiteHeader">
-						<div class="logo col-12 col-md-3 text-center">
-							<a href="/" title="" id="logoTitle">
-								<h1 class="m-0" id="logo" data-item="siteName"> </h1>
-							</a>
-						</div>
-						<nav class="col-12 col-md-9 text-center" data-item="search">
-							<select class="DropDown" data-monster="results" name="monsters" id="monsters">
-								<option selected disabled value="home"> Pick a Monster </option>
-							</select>
-						</nav>
-					</header>
-
+				<header class="row align-items-center SiteHeader wrap mb-0">
+					<div class="logo col-12 col-md-3 text-center">
+						<a href="/" title="" id="logoTitle">
+							<h1 class="m-0" id="logo" data-item="siteName"> </h1>
+						</a>
+					</div>
+					<nav class="col-12 col-md-9 text-center" data-item="search">
+						<select class="DropDown" data-monster="results" name="monsters" id="monsters">
+							<option selected disabled value="home"> Pick a Monster </option>
+						</select>
+					</nav>
+				</header>
+				<div class="col wrap mt-0">
 					<main class="row load MainContent" id="js-content"><!-- Contnet Goes Here --></main>
 				</div>
 			</div>
 			<footer class="footer appItem">
 				<div id="test" data-item="test"></div>
-				<div class="row col-12">
-					<div class="col-12 col-md-6">
+				<div class="row align-items-center col-12">
+					<div class="col-12 col-md-6 py-2">
 						<span data-item="siteName"></span> 
 						<time data-item="year"></time> 				
 					</div>	
@@ -60,7 +58,8 @@
 						</div>
 						<div class="col">
 							<nav class="nav flex-column text-left">
-								<a href="#About" class="nav-link" data-item="page">About</a> 
+									<a href="#About" class="nav-link" data-item="page">About</a> 
+									<a href="#Comment" class="nav-link" data-item="page">Comment</a> 
 							</nav>							
 						</div>						
 					</div>
