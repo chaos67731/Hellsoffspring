@@ -67,7 +67,12 @@ br {
 [class*="col"] {
   /*border: 1px solid rgba(39, 39, 39, 0.418);*/
 }
-
+.FacebookComments {
+    background: #fff;
+    display: inline-block;
+    margin: 15px auto;
+    padding: 16px;
+}
 /* Drop Down */
 div#monsters_chosen {
   color: #000;
