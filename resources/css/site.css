@@ -1,4 +1,6 @@
 /* Basic */
+html{background: rgb(78,78,78)}
+
 body{
   background-image: url(/resources/img/site/background-3.jpg);
   font-family: Verdana, Geneva, sans-serif;

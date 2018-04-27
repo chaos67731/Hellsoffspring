@@ -11,6 +11,7 @@ https://github.com/tapio/live-server
 ## James Needs to do 
 * Make back button work 
 * Google Analytics
+* Make Sitemap
 * ~~sort list in alphabetical order~~
 	* Do it by hand 
 * ~~progressive web app~~ 
