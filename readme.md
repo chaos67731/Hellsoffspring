@@ -33,7 +33,7 @@ https://github.com/tapio/live-server
 
 ## Pages That Need Made 
 * About 
-* Comment / Submit Ideas 
+* ~~Comment / Submit Ideas~~ 
 
 ## Bugs 
 * Page did not load once when picking a monster 
