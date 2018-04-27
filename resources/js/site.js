@@ -45,8 +45,12 @@ $(document).ready(function() {
             setTimeout(LoadBasicPage, 100);
             var pageTheName = "About - ";
             document.title = "About - Hell's Offspring";
-
         }
+        else if (window.location.href.indexOf('#Comment') > -1) {
+            setTimeout(LoadBasicPage, 100);
+            var pageTheName = "Comment - ";
+            document.title = "Comment - Hell's Offspring";
+        }        
         else if (window.location.href.indexOf('#WillRiter') > -1) {
             setTimeout(LoadBasicPage, 100);
         }

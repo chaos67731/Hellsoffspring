@@ -22,10 +22,10 @@ https://github.com/tapio/live-server
 * ~~Make basic pages work /site.js:147 & index.html:46~~
 
 ## Will Needs to do 
-* Come up with design 
+* ~~Come up with design~~ 
 * ~~Make logos~~
 * ~~Make mascot~~
-* Make list of first monsters (min: 25)
+* ~~Make list of first monsters (min: 25)~~
 * Make Pages for monsters 
 * ~~Set up loacl~~
 * ~~Set up Git~~
