@@ -59,11 +59,6 @@ $(document).ready(function() {
                     $('[data-item="kill"]').hide().html(kill).delay(contentFade).slideDown(contentFade);
                     $('[data-item="eats"]').hide().html(eats).delay(contentFade).slideDown(contentFade);
                     $('.DangerScaleValue').attr("id", 'percent' + meter);
-                    // Meta data
-                    $("meta[property='og\\:title']").attr("content", name.trim() + ' - '+ siteName.trim() );
-                    $("meta[property='og\\:url']").attr("content", 'https://hellsoffspring.com/#'+hash.trim());
-                    $("meta[property='og\\:description']").attr("content", name.trim() + ' : ' +  siteName.trim() + ' is your one stop shop to earn about monsters.');
-                    $("meta[property='og\\:image']").attr("content", 'https://hellsoffspring.com/monsters/'+img.trim());
                     // 
                     $.each(monsterPages, function(file, name) {
                         if (hash == file) {
@@ -96,27 +91,14 @@ $(document).ready(function() {
             $.each(normalPages, function(file, name) {
                 if (hash == file) {
                     document.title = name + ' - ' + siteName;
-                    // Meta data
-                    $("meta[property='og\\:title']").attr("content", name.trim() + ' - '+ siteName.trim() );
-                    $("meta[property='og\\:url']").attr("content", 'https://hellsoffspring.com/#'+file.trim());
-                    $("meta[property='og\\:description']").attr("content", name.trim() + ' : ' +  siteName.trim() + ' is your one stop shop to earn about monsters.');
-                    $("meta[property='og\\:image']").attr("content", 'https://hellsoffspring.com/logo.png');                    
                 }        
             });
 
         }else if (window.location.pathname == '/'){
             $("#js-content").load('partials/start.html');
-            $("meta[property='og\\:title']").attr("content", siteName.trim() );
-            $("meta[property='og\\:url']").attr("content", 'https://hellsoffspring.com/');
-            $("meta[property='og\\:description']").attr("content", 'Welcome to' + siteName.trim() +'! Search for a monster to learn more about it.');
-            $("meta[property='og\\:image']").attr("content", 'https://hellsoffspring.com/logo.png');  
         }else{
             $("#js-content").load('partials/error.html');
              document.title = 'Not Found - ' + siteName;
-            $("meta[property='og\\:title']").attr("content", siteName.trim() );
-            $("meta[property='og\\:url']").attr("content", 'https://hellsoffspring.com/');
-            $("meta[property='og\\:description']").attr("content", 'Welcome to' + siteName.trim() +'! Search for a monster to learn more about it.');
-            $("meta[property='og\\:image']").attr("content", 'https://hellsoffspring.com/logo.png');               
         }
     } 
     // Click Top Logo
