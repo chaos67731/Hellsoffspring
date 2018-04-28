@@ -21,7 +21,6 @@ $(document).ready(function() {
         $('#monsters').append('<option value="' + file + '">' + name + '</option>');
     });
     $("#monsters").chosen({});
-
     // When Dropdown Used    
     $('[class="DropDown"]').change(function() {
         var valueSelected = this.value; // Vars of what was selected        
@@ -39,7 +38,6 @@ $(document).ready(function() {
     // Hash Changes
     window.onhashchange = function () {
         setTimeout(ContentToLoad, 10);
-
         $("html, body").animate({
             scrollTop: 0
         }, contentFade );        
@@ -51,7 +49,6 @@ $(document).ready(function() {
             $('#monsters option[value="' + hash + '"]').attr("selected", "selected");
             // Monster Page
             $("#js-content").load('partials/search.html');
-
             $.getScript('pages/' + hash + '.js', function() {
                 function LoadMonsterPage() {
                     $('[data-item="name"]').append(name);
@@ -71,16 +68,15 @@ $(document).ready(function() {
                     // chosen-focus-input
                     $('.chosen-single span').html('Learning About: <strong>' + name + '</strong>');
                     // Danger Meter
-                    var progressValue = document.querySelector('.DangerScaleValue');
-                    var RADIUS = 54;
-                    var CIRCUMFERENCE = 2 * Math.PI * RADIUS;
+                    var progressValue = document.querySelector('.DangerScaleValue'),
+                        RADIUS = 54,
+                        CIRCUMFERENCE = 2 * Math.PI * RADIUS;
 
                     function progress(value) {
-                        var progress = value / 100;
-                        var dashoffset = CIRCUMFERENCE * (1 - progress);
+                        var progress = value / 100,
+                            dashoffset = CIRCUMFERENCE * (1 - progress);
                         progressValue.style.strokeDashoffset = dashoffset;
                     }
-
                     progressValue.style.strokeDasharray = CIRCUMFERENCE;
                     progress(100);
                     progress(meter);
@@ -89,7 +85,6 @@ $(document).ready(function() {
             });
         } else if (hash in normalPages){
             // Normal Page
-            console.log('normal page');
             $("#js-content").load('pages/html/'+hash+'.html');
             if(jQuery.inArray(hash, monsterPages) !== -1){}
             $('.chosen-single span').html('Pick a Monster');
@@ -99,7 +94,6 @@ $(document).ready(function() {
                 }        
             });
         }else{
-            console.log('nothing');
             $("#js-content").load('partials/error.html');
              document.title = 'Not Found - ' + siteName;
         }
@@ -118,8 +112,4 @@ $(document).ready(function() {
             window.history.replaceState({}, document.title, clean_uri);
         }
     });
-
-
-
-
 });
