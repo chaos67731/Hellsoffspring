@@ -4,15 +4,15 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Make Sitemap</title>
-	<script src="resources/js/jquery.js"></script>
-	<script src="pages.js"></script>
+	<script src="../resources/js/jquery.js"></script>
+	<script src="../pages.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
 		$.each(monsterPages, function(file, name) {
-			$('body').append('https://hellsoffspring.com/#'+file+'');
+			$('body').append('<div>https://hellsoffspring.com/#'+file+'</div>');
 		});	
 		$.each(normalPages, function(file, name) {
-			$('body').append('https://hellsoffspring.com/#'+file+'');
+			$('body').append('<div>https://hellsoffspring.com/#'+file+'</div>');
 		});		
 	});	
 	</script>	

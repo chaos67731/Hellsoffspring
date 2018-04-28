@@ -10,27 +10,6 @@
 		<link rel="manifest" href="manifest.json" />
 		<link rel="shortcut icon" href="icon.png" type="image/x-icon">
 		<link rel="icon" href="icon.png" type="image/x-icon">
-		<!-- jQuery -->
-		<script src="resources/js/jquery.js"></script>
-		<!-- Plugins -->
-		<script src="resources/js/plugins.js"></script>
-		<!-- Pages -->
-		<script src="pages.js"></script>
-		<!-- Custom -->
-		<script src="resources/js/site.js"></script>
-		<!-- Style -->
-		<link rel="stylesheet" href="resources/css/bootstrap.css" />
-		<link rel="stylesheet" href="resources/css/chosen.min.css" />
-		<link rel="stylesheet" href="resources/css/site.css" />
-		<script>
-			(function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
-			fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));
-		</script>		
 	</head>
 	<body class="ejs">
 		<div id="app">
@@ -80,6 +59,17 @@
 				</div>
 			</footer>
 		</div>
+		<!-- Style -->
+		<link rel="stylesheet" href="resources/css/plugin.css" />
+		<link rel="stylesheet" href="resources/css/site.css" />		
+		<!-- jQuery -->
+		<script src="resources/js/jquery.js"></script>
+		<!-- Plugins -->
+		<script src="resources/js/plugins.js"></script>
+		<!-- Pages -->
+		<script src="pages.js"></script>
+		<!-- Custom -->
+		<script src="resources/js/site.js"></script>		
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118288277-1"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
@@ -87,5 +77,14 @@
 		  gtag('js', new Date());
 		  gtag('config', 'UA-118288277-1');
 		</script>
+		<script>
+			(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>		
 	</body>
 </html>
