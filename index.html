@@ -22,7 +22,7 @@
 		<link rel="stylesheet" href="resources/css/bootstrap.css" />
 		<link rel="stylesheet" href="resources/css/chosen.min.css" />
 		<link rel="stylesheet" href="resources/css/site.css" />
-		<script>
+<!-- 		<script>
 			(function(d, s, id) {
 			var js, fjs = d.getElementsByTagName(s)[0];
 			if (d.getElementById(id)) return;
@@ -30,7 +30,7 @@
 			js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
 			fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));
-		</script>		
+		</script> -->		
 	</head>
 	<body class="ejs">
 		<div id="app">
@@ -48,7 +48,9 @@
 					</nav>
 				</header>
 				<div class="col wrap mt-0">
-					<main class="row load MainContent" id="js-content"><!-- Contnet Goes Here --></main>
+					<main class="row load MainContent" id="js-content">
+						<!-- Contnet Goes Here -->
+					</main>
 				</div>
 			</div>
 			<footer class="footer appItem">
@@ -56,7 +58,10 @@
 				<div class="row align-items-center col-12">
 					<div class="col-12 col-md-6 py-2">
 						<span data-item="siteName"></span> 
-						<time data-item="year"></time> 				
+						<time data-item="year"></time>
+						<div>
+							<small><a href="#Sitemap" class="nav-link" data-item="page">Sitemap</a> </small>
+						</div> 				
 					</div>	
 					<div class="row col-12 col-md-6">
 						<div class="col">
@@ -67,20 +72,20 @@
 						</div>
 						<div class="col">
 							<nav class="nav flex-column text-left">
-									<a href="#About" class="nav-link" data-item="page">About</a> 
-									<a href="#Comment" class="nav-link" data-item="page">Comment</a> 
+								<a href="#About" class="nav-link" data-item="page">About</a> 
+								<a href="#Comment" class="nav-link" data-item="page">Comment</a> 
 							</nav>							
 						</div>						
 					</div>
 				</div>
 			</footer>
 		</div>
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118288277-1"></script>
+<!-- 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118288277-1"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
 		  gtag('config', 'UA-118288277-1');
-		</script>
+		</script> -->
 	</body>
 </html>

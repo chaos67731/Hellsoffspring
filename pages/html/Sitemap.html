@@ -1,0 +1,27 @@
+<div class="col-12">
+	<center>
+		<h1 class="mainHeading">
+			Hell's Offspring Sitemap
+		</h1>
+	</center>
+	<div class="row justify-content-center mt-5">
+		<div class="col-12 col-md-5">
+			<h3 class="subHeading">Monster Pages</h3>
+			<ul id="monsterSitemap" class="nav flex-column"></ul>
+		</div>
+		<div class="col-12 col-md-5">
+			<h3 class="subHeading">Normal Pages</h3>
+			<ul id="pagesSitemap" class="nav flex-column"></ul>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+	$.each(monsterPages, function(file, name) {
+	$('#monsterSitemap').append('<li class="nav-item"><a class="nav-link" href="/#' + file + '">' + name + '</a></li>');
+	});	
+	$.each(normalPages, function(file, name) {
+		$('#pagesSitemap').append('<li class="nav-item"><a class="nav-link" href="/#' + file + '">' + name + '</a></li>');
+	});		
+});	
+</script>
