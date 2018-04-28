@@ -6,12 +6,12 @@ https://github.com/tapio/live-server
 # Hellsoffspring To do list  
 * ~~gzip site~~
 * Facebook and Twitter share 
-* Make dropdown look better on mobile
+* ~~Make dropdown look better on mobile~~
 
 ## James Needs to do 
-* Make back button work 
-* Google Analytics
-* Make Sitemap
+* ~~Make back button work~~
+* ~~Google Analytics~~
+* ~~Make Sitemap~~
 * ~~sort list in alphabetical order~~
 	* Do it by hand 
 * ~~progressive web app~~ 
@@ -36,7 +36,7 @@ https://github.com/tapio/live-server
 * Comment / Submit Ideas 
 
 ## Bugs 
-* Page did not load once when picking a monster 
+* ~~Page did not load once when picking a monster ~~
 * Mobile cant pick from dropdown when on page (/#about)
 
 ### Not Doing Yet
