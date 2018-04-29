@@ -5,7 +5,7 @@ https://github.com/tapio/live-server
 
 # Hellsoffspring To do list  
 * ~~gzip site~~
-* Facebook and Twitter share 
+* ~~Facebook and Twitter share~~
 * ~~Make dropdown look better on mobile~~
 
 ## James Needs to do 
@@ -32,12 +32,14 @@ https://github.com/tapio/live-server
 * ~~Set up Git~~
 
 ## Pages That Need Made 
-* About 
-* Comment / Submit Ideas 
+* ~~About~~
+* ~~Comment / Submit Ideas~~
 
 ## Bugs 
 * ~~Page did not load once when picking a monster ~~
-* Mobile cant pick from dropdown when on page (/#about)
+* ~~Mobile cant pick from dropdown when on page (/#about)~~
+* ~~Reset dropdown when going to normal page~~
+* Facebook comment on mobile 
 
 ### Not Doing Yet
 * Get content to pull from html files (pages/html/monsterName)

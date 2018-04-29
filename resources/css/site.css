@@ -69,9 +69,12 @@ br {
 }
 .FacebookComments {
     background: #fff;
-    display: inline-block;
+    display: block;
     margin: 15px auto;
-    padding: 16px;
+    padding: 16px 0;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
 }
 /* Drop Down */
 div#monsters_chosen {
@@ -211,6 +214,21 @@ color: #000 !important;
 
 
 
+
+@media(max-width: 767px) {
+    select#monsters {
+        padding-top: 1px;
+        padding-bottom: 1px;
+        font-size: 20px
+    }
+    #logo{
+        height: 70px;
+    }
+
+    .text-center-mb{
+      text-align: center !important;
+    }
+}
 
 /* Will's style */
 

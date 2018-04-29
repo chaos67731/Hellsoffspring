@@ -20,7 +20,7 @@ $(document).ready(function() {
     $.each(monsterPages, function(file, name) {
         $('#monsters').append('<option value="' + file + '">' + name + '</option>');
     });
-    $("#monsters").chosen({});
+    // $("#monsters").chosen({});
     // When Dropdown Used    
     $('[class="DropDown"]').change(function() {
         var valueSelected = this.value; // Vars of what was selected        
@@ -93,6 +93,7 @@ $(document).ready(function() {
                     document.title = name + ' - ' + siteName;
                 }        
             });
+            $("#monsters").val("home");
 
         }else if (window.location.pathname == '/'){
             $("#js-content").load('partials/start.html');
