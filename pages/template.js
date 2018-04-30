@@ -10,7 +10,7 @@ var eats = "blank";
 // OR
 // OR
 // OR
-// 
+//
 
 var name = `
   blank

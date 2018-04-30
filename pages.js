@@ -1,8 +1,11 @@
 // Make sure you add them alphabetically 
 var monsterPages = {
-    Cthulhu: "Cthulhu",    
+    Cerberus: "Cerberus",
     Dragon: "Dragon",
-    Golem: "Golem",
+    Minotaur: "Minotaur",
+    Skinwalker: "Skinwalker",
+    Siren:  "Siren",
+    Wendigo: "Wendigo",
  };
 
 
