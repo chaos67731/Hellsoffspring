@@ -10,6 +10,17 @@
 		<link rel="manifest" href="manifest.json" />
 		<link rel="shortcut icon" href="icon.png" type="image/x-icon">
 		<link rel="icon" href="icon.png" type="image/x-icon">
+		<meta property="fb:app_id" content="192600191363440" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Hell's Offspring" />
+		<meta property="og:description" content="Search for monsters from around the world." />
+		<meta property="og:url" content="https://hellsoffspring.com/" />
+		<meta property="og:site_name" content="HellsOffspring.com/" />
+		<meta property="og:image" content="https://hellsoffspring.com/preview.jpg" />
+		<!-- Style -->
+		<link rel="stylesheet" href="resources/css/plugin.css" />
+		<link rel="stylesheet" href="resources/css/site.css" />		
 		<!-- jQuery -->
 		<script src="resources/js/jquery.js"></script>
 		<!-- Plugins -->
@@ -17,13 +28,10 @@
 		<!-- Pages -->
 		<script src="pages.js"></script>
 		<!-- Custom -->
-		<script src="resources/js/site.js"></script>
-		<!-- Style -->
-		<link rel="stylesheet" href="resources/css/bootstrap.css" />
-		<link rel="stylesheet" href="resources/css/chosen.min.css" />
-		<link rel="stylesheet" href="resources/css/site.css" />
+		<script src="resources/js/site.js"></script>		
 	</head>
 	<body class="ejs">
+		<div id="fb-root"></div>
 		<div id="app">
 			<div class="appItem MainWrap">
 				<header class="row align-items-center SiteHeader wrap mb-0">
@@ -39,33 +47,38 @@
 					</nav>
 				</header>
 				<div class="col wrap mt-0">
-					<main class="row load MainContent" id="js-content"><!-- Contnet Goes Here --></main>
+					<main class="row load MainContent" id="js-content">
+						<!-- Contnet Goes Here -->
+					</main>
 				</div>
 			</div>
 			<footer class="footer appItem">
 				<div id="test" data-item="test"></div>
-				<div class="row align-items-center col-12">
+				<div class="row align-items-center col-12 m-0 p-0">
 					<div class="col-12 col-md-6 py-2">
 						<span data-item="siteName"></span> 
-						<time data-item="year"></time> 				
+						<time data-item="year"></time>
+						<div>
+							<small><a href="#Sitemap" class="nav-link" data-item="page">Sitemap</a> </small>
+						</div> 				
 					</div>	
-					<div class="row col-12 col-md-6">
+					<div class="row col-12 col-md-6 m-0 p-0">
 						<div class="col">
-							<nav class="nav flex-column text-left">
+							<nav class="nav flex-column text-left text-center-mb">
 								<a href="#WillRiter" class="nav-link" data-item="page">Will Riter</a>
 								<a href="#Alonso" class="nav-link" data-item="page">Alonso</a> 
 							</nav>							
 						</div>
 						<div class="col">
-							<nav class="nav flex-column text-left">
-									<a href="#About" class="nav-link" data-item="page">About</a> 
-									<a href="#Comment" class="nav-link" data-item="page">Comment</a> 
+							<nav class="nav flex-column text-left text-center-mb">
+								<a href="#About" class="nav-link" data-item="page">About</a> 
+								<a href="#Comment" class="nav-link" data-item="page">Comment</a> 
 							</nav>							
 						</div>						
 					</div>
 				</div>
 			</footer>
-		</div>
+		</div>		
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118288277-1"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
@@ -73,13 +86,14 @@
 		  gtag('js', new Date());
 		  gtag('config', 'UA-118288277-1');
 		</script>
-		<script>(function(d, s, id) {
-		    var js, fjs = d.getElementsByTagName(s)[0];
-		    if (d.getElementById(id)) return;
-		    js = d.createElement(s); js.id = id;
-		    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
-		    fjs.parentNode.insertBefore(js, fjs);
-		    }(document, 'script', 'facebook-jssdk'));
+		<script>
+			(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
 		</script>		
 	</body>
 </html>
