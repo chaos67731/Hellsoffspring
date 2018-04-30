@@ -5,23 +5,23 @@
 		</h1>
 	</center>
 	<div class="row justify-content-center mt-5">
-		<div class="col-12 col-md-5">
-			<h3 class="subHeading">Monster Pages</h3>
-			<ul id="monsterSitemap" class="nav flex-column"></ul>
-		</div>
-		<div class="col-12 col-md-5">
+		<div class="col-12">
 			<h3 class="subHeading">Normal Pages</h3>
-			<ul id="pagesSitemap" class="nav flex-column"></ul>
+			<div id="pagesSitemap" class="row"></div>
+		</div>		
+		<div class="col-12">
+			<h3 class="subHeading">Monster Pages</h3>
+			<div id="monsterSitemap" class="row"></div>
 		</div>
 	</div>
 </div>
 <script type="text/javascript">
 $(document).ready(function() {
 	$.each(monsterPages, function(file, name) {
-	$('#monsterSitemap').append('<li class="nav-item"><a class="nav-link" href="/#' + file + '">' + name + '</a></li>');
+	$('#monsterSitemap').append('<span class="col-4 mb-3"><a href="/#' + file + '">' + name + '</a></span>');
 	});	
 	$.each(normalPages, function(file, name) {
-		$('#pagesSitemap').append('<li class="nav-item"><a class="nav-link" href="/#' + file + '">' + name + '</a></li>');
+		$('#pagesSitemap').append('<span class="col-4 mb-3"><a href="/#' + file + '">' + name + '</a></span>');
 	});		
 });	
 </script>
