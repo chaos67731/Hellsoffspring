@@ -41,8 +41,9 @@ $(document).ready(function() {
         $("html, body").animate({
             scrollTop: 0
         }, contentFade );
-        var match = jQuery(this).attr('href').match(/#\S+/);
-        ga('send', 'pageview', location.pathname + match[0]);           
+        // var match = jQuery(this).attr('href').match(/#\S+/);
+        // ga('send', 'pageview', location.pathname + match[0]); 
+        ga('send', 'pageview', location.pathname + hash);          
     }
     // What to load Function
     function ContentToLoad() {
