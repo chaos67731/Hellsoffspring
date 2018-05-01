@@ -62,7 +62,7 @@ ga('send', 'pageview', { 'page': location.pathname + location.search + location.
 						</a>
 					</div>
 					<nav class="col-12 col-md-9 text-center" data-item="search">
-						<select class="DropDown view" data-monster="results" name="monsters" id="monsters">
+						<select class="DropDown" data-monster="results" name="monsters" id="monsters">
 							<option selected disabled value="home"> Pick a Monster </option>
 						</select>
 					</nav>
@@ -110,6 +110,10 @@ ga('send', 'pageview', { 'page': location.pathname + location.search + location.
 <script type="text/javascript">
 jQuery(document).ready(function () {
 jQuery('.view').click(function(){
+var match = jQuery(this).attr('href').match(/#\S+/);
+ga('send', 'pageview', location.pathname + match[0]);
+});
+jQuery('option').change(function(){
 var match = jQuery(this).attr('href').match(/#\S+/);
 ga('send', 'pageview', location.pathname + match[0]);
 });
