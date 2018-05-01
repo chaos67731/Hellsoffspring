@@ -113,7 +113,7 @@ jQuery('.view').click(function(){
 var match = jQuery(this).attr('href').match(/#\S+/);
 ga('send', 'pageview', location.pathname + match[0]);
 });
-jQuery('option').change(function(){
+jQuery('option').click(function(){
 var match = jQuery(this).attr('href').match(/#\S+/);
 ga('send', 'pageview', location.pathname + match[0]);
 });
