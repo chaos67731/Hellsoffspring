@@ -18,7 +18,7 @@ $(document).ready(function() {
     $('[data-item="year"]').html(year); 
     // Load the dropdown and make it nice
     $.each(monsterPages, function(file, name) {
-        $('#monsters').append('<option value="' + file + '">' + name + '</option>');
+        $('#monsters').append('<option class="view" value="' + file + '">' + name + '</option>');
     });
     $("#monsters").chosen({});
     // When Dropdown Used    

@@ -30,23 +30,34 @@
 		<!-- Custom -->
 		<script src="resources/js/site.js"></script>
 		<!-- Google Tag Manager -->
-			<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<!-- 			<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-			})(window,document,'script','dataLayer','GTM-WP34XSM');</script>
+			})(window,document,'script','dataLayer','GTM-WP34XSM');</script> -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-118288277-1', {'allowAnchor': true});
+ga('send', 'pageview', { 'page': location.pathname + location.search + location.hash});
+</script>
+
 		<!-- End Google Tag Manager -->
 	</head>
 	<body class="ejs">
 	<!-- Google Tag Manager (noscript) -->
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WP34XSM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WP34XSM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
 	<!-- End Google Tag Manager (noscript) -->		
 		<div id="fb-root"></div>
 		<div id="app">
 			<div class="appItem MainWrap">
 				<header class="row align-items-center SiteHeader wrap mb-0">
 					<div class="logo col-12 col-md-3 text-center">
-						<a href="/" title="" id="logoTitle">
+						<a href="/" title="" id="logoTitle" class="view">
 							<h1 class="m-0" id="logo" data-item="siteName"></h1>
 						</a>
 					</div>
@@ -68,20 +79,20 @@
 						<span data-item="siteName"></span> 
 						<time data-item="year"></time>
 						<div>
-							<small><a href="#Sitemap" class="nav-link" data-item="page">Sitemap</a> </small>
+							<small><a href="#Sitemap" class="view nav-link" data-item="page">Sitemap</a> </small>
 						</div> 				
 					</div>	
 					<div class="row col-12 col-md-6 m-0 p-0">
 						<div class="col">
 							<nav class="nav flex-column text-left text-center-mb">
-								<a href="#WillRiter" class="nav-link" data-item="page">Will Riter</a>
-								<a href="#Alonso" class="nav-link" data-item="page">Alonso</a> 
+								<a href="#WillRiter" class="view nav-link" data-item="page">Will Riter</a>
+								<a href="#Alonso" class="view nav-link" data-item="page">Alonso</a> 
 							</nav>							
 						</div>
 						<div class="col">
 							<nav class="nav flex-column text-left text-center-mb">
-								<a href="#About" class="nav-link" data-item="page">About</a> 
-								<a href="#Comment" class="nav-link" data-item="page">Comment</a> 
+								<a href="#About" class="view nav-link" data-item="page">About</a> 
+								<a href="#Comment" class="view nav-link" data-item="page">Comment</a> 
 							</nav>							
 						</div>						
 					</div>
@@ -90,12 +101,21 @@
 			</footer>
 		</div>		
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118288277-1"></script>
-		<script>
+<!-- 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
 		  gtag('config', 'UA-118288277-1');
-		</script>
+		</script> -->
+<script type="text/javascript">
+jQuery(document).ready(function () {
+jQuery('.view').click(function(){
+var match = jQuery(this).attr('href').match(/#\S+/);
+ga('send', 'pageview', location.pathname + match[0]);
+});
+});
+</script>
+
 		<script>
 			(function(d, s, id) {
 			var js, fjs = d.getElementsByTagName(s)[0];
