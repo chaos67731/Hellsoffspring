@@ -7,7 +7,7 @@
 //     && isset($payload['repository']['name'])
 //     && $payload['repository']['name'] == 'MuchGames'
 //     ) {
-        $execOutput = shell_exec('deploy.sh');
+        $execOutput = shell_exec('/kunden/homepages/42/d323263551/htdocs/hellsoffspring.com/deploy.sh 2>&1');
         echo($execOutput);
         echo('finished script');
 //     }
