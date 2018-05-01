@@ -40,7 +40,9 @@ $(document).ready(function() {
         setTimeout(ContentToLoad, 10);
         $("html, body").animate({
             scrollTop: 0
-        }, contentFade );        
+        }, contentFade );
+        var match = jQuery(this).attr('href').match(/#\S+/);
+        ga('send', 'pageview', location.pathname + match[0]);           
     }
     // What to load Function
     function ContentToLoad() {

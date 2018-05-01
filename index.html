@@ -57,7 +57,7 @@ ga('send', 'pageview', { 'page': location.pathname + location.search + location.
 			<div class="appItem MainWrap">
 				<header class="row align-items-center SiteHeader wrap mb-0">
 					<div class="logo col-12 col-md-3 text-center">
-						<a href="/" title="" id="logoTitle" class="view">
+						<a href="/" title="" id="logoTitle">
 							<h1 class="m-0" id="logo" data-item="siteName"></h1>
 						</a>
 					</div>
@@ -79,20 +79,20 @@ ga('send', 'pageview', { 'page': location.pathname + location.search + location.
 						<span data-item="siteName"></span> 
 						<time data-item="year"></time>
 						<div>
-							<small><a href="#Sitemap" class="view nav-link" data-item="page">Sitemap</a> </small>
+							<small><a href="#Sitemap" class="nav-link" data-item="page">Sitemap</a> </small>
 						</div> 				
 					</div>	
 					<div class="row col-12 col-md-6 m-0 p-0">
 						<div class="col">
 							<nav class="nav flex-column text-left text-center-mb">
-								<a href="#WillRiter" class="view nav-link" data-item="page">Will Riter</a>
-								<a href="#Alonso" class="view nav-link" data-item="page">Alonso</a> 
+								<a href="#WillRiter" class="nav-link" data-item="page">Will Riter</a>
+								<a href="#Alonso" class="nav-link" data-item="page">Alonso</a> 
 							</nav>							
 						</div>
 						<div class="col">
 							<nav class="nav flex-column text-left text-center-mb">
-								<a href="#About" class="view nav-link" data-item="page">About</a> 
-								<a href="#Comment" class="view nav-link" data-item="page">Comment</a> 
+								<a href="#About" class="nav-link" data-item="page">About</a> 
+								<a href="#Comment" class="nav-link" data-item="page">Comment</a> 
 							</nav>							
 						</div>						
 					</div>
@@ -101,22 +101,13 @@ ga('send', 'pageview', { 'page': location.pathname + location.search + location.
 			</footer>
 		</div>		
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118288277-1"></script>
-<!-- 		<script>
+		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
 		  gtag('config', 'UA-118288277-1');
-		</script> -->
-<script type="text/javascript">
-jQuery(document).ready(function () {
-    window.onhashchange = function () {
-		var match = jQuery(this).attr('href').match(/#\S+/);
-		ga('send', 'pageview', location.pathname + match[0]);      
-    }
-
-});
-</script>
-
+		</script>
+		
 		<script>
 			(function(d, s, id) {
 			var js, fjs = d.getElementsByTagName(s)[0];
