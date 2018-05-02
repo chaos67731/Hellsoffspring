@@ -6,6 +6,7 @@ var monsterPages = {
     Skinwalker: "Skinwalker",
     Siren:  "Siren",
     Wendigo: "Wendigo",
+    Vampire: "Vampire",
  };
 
 
