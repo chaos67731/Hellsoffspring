@@ -4,11 +4,11 @@ var monsterPages = {
     Dragon: "Dragon",
     Minotaur: "Minotaur",
     Skinwalker: "Skinwalker",
+    Vampire: "Vampire",
     Siren:  "Siren",
     Wendigo: "Wendigo",
-    Vampire: "Vampire",
     WeepingAngel: "Weeping Angel",
- };
+};
 
 
 var normalPages = {

@@ -1,8 +1,8 @@
 var name = `
-Weeping Angel
+    Weeping Angel
 `;
 var img = `
-    blank.jpg
+    Weepingangel.jpg
 `;
  var meter = `
     47
@@ -18,7 +18,7 @@ var lives = `
 `;
 var kill = `
     <p>A weeping angel can be kill by shooting one in the head with a gun decapitating it while you are lokking at it so it is in its statue form or have someone smash it with a sledgehammer while you look at it.</p>
-  `;
+`;
 var eats = `
     <p>The weeping angels eat/ absorb a persons energy/ their time force to stay alive.</p>
-  `;
+`;
