@@ -52,7 +52,7 @@ $(document).ready(function() {
             // Monster Page
             $("#js-content").load('partials/search.html');
             $.getScript('pages/' + hash + '.js', function() {
-                
+                // $("meta[property='og\\:title']").attr("content", 'https://hellsoffspring.com/monsters/'+img.trim()+);
                 function LoadMonsterPage() {
                     $('[data-item="name"]').append(name);
                     $('[data-item="img"]').html('<img src="/monsters/'+img.trim()+'" class="img" title="The '+name.trim()+'" alt="'+name.trim()+'"/>');
@@ -62,7 +62,6 @@ $(document).ready(function() {
                     $('[data-item="kill"]').hide().html(kill).delay(contentFade).slideDown(contentFade);
                     $('[data-item="eats"]').hide().html(eats).delay(contentFade).slideDown(contentFade);
                     $('.DangerScaleValue').attr("id", 'percent' + meter);
-
                     // 
                     $.each(monsterPages, function(file, name) {
                         if (hash == file) {
@@ -92,7 +91,6 @@ $(document).ready(function() {
             $("#js-content").load('pages/html/'+hash+'.html');
             if(jQuery.inArray(hash, monsterPages) !== -1){}
             $('.chosen-single span').html('Pick a Monster');
-            $("meta[property='og\\:image']").attr("content", 'https://hellsoffspring.com/preview.jpg');
             $.each(normalPages, function(file, name) {
                 if (hash == file) {
                     document.title = name + ' - ' + siteName;
@@ -102,12 +100,9 @@ $(document).ready(function() {
 
         }else if (window.location.pathname == '/'){
             $("#js-content").load('partials/start.html');
-            $("meta[property='og\\:image']").attr("content", 'https://hellsoffspring.com/preview.jpg');
         }else{
             $("#js-content").load('partials/error.html');
-            document.title = 'Not Found - ' + siteName;
-            $("meta[property='og\\:image']").attr("content", 'https://hellsoffspring.com/preview.jpg');
-
+             document.title = 'Not Found - ' + siteName;
         }
     } 
     // Click Top Logo

@@ -22,4 +22,3 @@
   var eats = `
   The minotaur was given annual offerings of young ones  and women to eat.
   `;
-  $("meta[property='og\\:image']").attr("content", 'https://hellsoffspring.com/monsters/'+img.trim());
