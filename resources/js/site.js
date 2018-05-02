@@ -52,7 +52,7 @@ $(document).ready(function() {
             // Monster Page
             $("#js-content").load('partials/search.html');
             $.getScript('pages/' + hash + '.js', function() {
-                $("meta[property='og\\:image']").attr("content", 'https://hellsoffspring.com/monsters/'+img.trim());
+                
                 function LoadMonsterPage() {
                     $('[data-item="name"]').append(name);
                     $('[data-item="img"]').html('<img src="/monsters/'+img.trim()+'" class="img" title="The '+name.trim()+'" alt="'+name.trim()+'"/>');
