@@ -45,7 +45,8 @@ $(document).ready(function() {
     // What to load Function
     function ContentToLoad() {
         var hash = document.URL.substr(document.URL.indexOf('#') + 1);
-        ga('send', 'pageview', location.pathname + hash);
+        // For Google Analytics
+        ga('send', 'pageview', location.pathname + '#' + hash);
         if(hash in monsterPages){
             $('#monsters option[value="' + hash + '"]').attr("selected", "selected");
             // Monster Page
