@@ -57,5 +57,5 @@ ExpiresByType image/jpeg "access plus 1 month"
 # CSS
 ExpiresByType text/css "access plus 1 week"
 # Javascript
-ExpiresByType application/javascript "access plus 1 week"
+# ExpiresByType application/javascript "access plus 1 week"
 </IfModule>

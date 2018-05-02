@@ -37,7 +37,8 @@ $(document).ready(function() {
     }
     // Hash Changes
     window.onhashchange = function () {
-        setTimeout(ContentToLoad, 10);
+        $("meta[property='og\\:title']").attr("content", 'https://hellsoffspring.com/monsters/'+img.trim()+);
+        setTimeout(ContentToLoad, 100);
         $("html, body").animate({
             scrollTop: 0
         }, contentFade );
@@ -52,7 +53,6 @@ $(document).ready(function() {
             // Monster Page
             $("#js-content").load('partials/search.html');
             $.getScript('pages/' + hash + '.js', function() {
-                // $("meta[property='og\\:title']").attr("content", 'https://hellsoffspring.com/monsters/'+img.trim()+);
                 function LoadMonsterPage() {
                     $('[data-item="name"]').append(name);
                     $('[data-item="img"]').html('<img src="/monsters/'+img.trim()+'" class="img" title="The '+name.trim()+'" alt="'+name.trim()+'"/>');
