@@ -1,0 +1,53 @@
+<script src="resources/js/bootstrap.min.js?=5022008"></script>
+
+<div id="accordion">
+	<button class="accordionLink" data-toggle="collapse" data-target="#collapseOne">
+		What is this site for?
+	</button>
+
+	<div id="collapseOne" class="collapse show accordionContent" data-parent="#accordion">
+		<p>
+			Monsters! We are adding monsters weekly and hope to have a full list of as many monsters as posable as soon as we can.  This site is just to look up monster, learn about them and maybe even talk to other people that enjoy monsters as well.
+		</p>
+	</div>
+
+	<button class="accordionLink" data-toggle="collapse" data-target="#collapseTwo">
+		Where do you come up with monsters?
+	</button>
+
+	<div id="collapseTwo" class="collapse accordionContent" data-parent="#accordion">
+		<p>
+			We have a list of monsters we would like to be on the site that we are working on, however, if a user recommends a monster we are more than happy to add that to the list. 
+		</p>
+		<a href="#Suggests" class="view nav-link" data-item="page">Suggests A Monster Here</a>
+	</div>
+
+	<button class="accordionLink" data-toggle="collapse" data-target="#collapseThree">
+		How many monsters do you have on the site?
+	</button>
+
+	<div id="collapseThree" class="collapse accordionContent" data-parent="#accordion">
+		<script type="text/javascript">
+			$(function() {
+				var MonsterCount = 0
+				$.each(monsterPages, function(index, value) {
+				    MonsterCount++;
+				})
+				$( "#MonsterCount" ).html( MonsterCount );
+			});
+		</script>
+		At the momnet we have <span id="MonsterCount"></span>, and will be adding more over time.  Keep checking back for more. 
+	</div>
+
+	<button class="accordionLink" data-toggle="collapse" data-target="#collapseFour">
+		What is the definition of monster?
+	</button>
+
+	<div id="collapseFour" class="collapse accordionContent" data-parent="#accordion">
+		<ul>
+			<li>1. a mythical creature combining features of animal and human form or having the forms of various animals in combination.</li>
+			<li>2. any creation so nasty or horrible as to intimidate people.</li>
+			<li>3. any creature or person grotesquely straying from the normal shape, behavior, or character.</li>
+		</ul>
+	</div>		
+</div>
