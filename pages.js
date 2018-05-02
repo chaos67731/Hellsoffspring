@@ -7,6 +7,7 @@ var monsterPages = {
     Siren:  "Siren",
     Wendigo: "Wendigo",
     Vampire: "Vampire",
+    WeepingAngel: "Weeping Angel",
  };
 
 
