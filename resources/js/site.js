@@ -37,7 +37,6 @@ $(document).ready(function() {
     }
     // Hash Changes
     window.onhashchange = function () {
-        $("meta[property='og\\:title']").attr("content", 'https://hellsoffspring.com/monsters/'+hash.trim()+'.jpg');
         setTimeout(ContentToLoad, 100);
         $("html, body").animate({
             scrollTop: 0
