@@ -2,20 +2,23 @@ var name = `
 Weeping Angel
 `;
 var img = `
-  blank.jpg
+    blank.jpg
 `;
-var meter = `
-  67
+ var meter = `
+    47
 `;
 var description = `
-  blank
+    <p>Weeping Angels are physically very strong, although they rarely physically kill a victim since this wastes the time-potential energy which the Angels need to  consume. One exception to this behaviour is when an Angel or group of Angels wishes to communicate with other beings - in these instances, they select a victim and snap their neck prior to "rearranging the brains" for their own needs the Angels are then capable of speaking with their victim's voice and and tricking people to come closer.</p>
+
+    <p>But there is a trick because they can only move when you are looking at them. So if you are looking at them they can not hurt you.</p>
 `;
 var lives = `
-  blank
+    <p>The weeping angels are as old as the universe and no one really knows where they came frome but you can rarely find them on earth because the goverment has most of them locked up and the rest are on diferent planets.
+    </p>  
 `;
 var kill = `
-  blank
-`;
+    <p>A weeping angel can be kill by shooting one in the head with a gun decapitating it while you are lokking at it so it is in its statue form or have someone smash it with a sledgehammer while you look at it.</p>
+  `;
 var eats = `
-  blank
-`;
+    <p>The weeping angels eat/ absorb a persons energy/ their time force to stay alive.</p>
+  `;
