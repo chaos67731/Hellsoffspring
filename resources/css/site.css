@@ -73,7 +73,8 @@ br {
   padding: 16px 0;
   width: 100%;
   max-width: 500px;
-  overflow: hidden;
+  z-index: 1000;
+  position: relative;
 }
 /* Drop Down */
 div#monsters_chosen {

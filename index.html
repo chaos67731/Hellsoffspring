@@ -38,23 +38,35 @@
 
 			ga('create', 'UA-118288277-1', {'allowAnchor': true});
 			ga('send', 'pageview', { 'page': location.pathname + location.search + location.hash});
+
+script language="javascript">
+    function fbshareCurrentPage()
+    {window.open("https://www.facebook.com/sharer/sharer.php?u="+escape(document.URL.substr(document.URL.indexOf('#') + 1))+"&t="+document.title, '', 
+    'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+    return false; }
+</script>			
 		</script>
+
 	</head>
 	<body class="ejs">	
 		<div id="fb-root"></div>
 		<div id="app">
 			<div class="appItem MainWrap">
 				<header class="row align-items-center SiteHeader wrap mb-0">
-					<div class="logo col-12 col-md-3 text-center">
+					<div class="logo col-6 col-md-3 text-center order-1 order-md-1">
 						<a href="/" title="" id="logoTitle" class="view">
 							<h1 class="m-0" id="logo" data-item="siteName"></h1>
 						</a>
 					</div>
-					<nav class="col-12 col-md-9 text-center" data-item="search">
+					<nav class="col-12 col-md-8 text-center order-3 order-md-2" data-item="search">
 						<select class="DropDown" data-monster="results" name="monsters" id="monsters">
 							<option selected disabled value="home"> Pick a Monster </option>
 						</select>
 					</nav>
+					<div class="col-6 col-md-1 order-2 order-md-3 p-0 text-center">
+				<a href="javascript:fbshareCurrentPage()" target="_blank" alt="Share on Facebook">Facebook</a>
+
+					</div>
 				</header>
 				<div class="col wrap mt-0">
 					<main class="row load MainContent" id="js-content">
