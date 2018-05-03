@@ -43,7 +43,7 @@
 
 <script language="javascript">
     function fbshareCurrentPage()
-    {window.open("https://www.facebook.com/sharer/sharer.php?u="+document.URL.substr(document.URL.indexOf('#') + 1)+"&t="+document.title, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false; }
+    {window.open("https://www.facebook.com/sharer/sharer.php?u="+escape(window.location.hash)+"&t="+document.title, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false; }
 </script>
 	</head>
 	<body class="ejs">	
