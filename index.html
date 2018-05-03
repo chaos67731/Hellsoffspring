@@ -45,20 +45,16 @@
 		<div id="app">
 			<div class="appItem MainWrap">
 				<header class="row align-items-center SiteHeader wrap mb-0">
-					<div class="logo col-6 col-md-3 text-center order-1 order-md-1">
+					<div class="logo col-12 col-md-3 text-center">
 						<a href="/" title="" id="logoTitle" class="view">
 							<h1 class="m-0" id="logo" data-item="siteName"></h1>
 						</a>
 					</div>
-					<nav class="col-12 col-md-8 text-center order-3 order-md-2" data-item="search">
+					<nav class="col-12 col-md-9 text-center" data-item="search">
 						<select class="DropDown" data-monster="results" name="monsters" id="monsters">
 							<option selected disabled value="home"> Pick a Monster </option>
 						</select>
 					</nav>
-					<div class="col-6 col-md-1 order-2 order-md-3 p-0 text-center">
-						<div class="fb-share-button" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-
-					</div>					
 				</header>
 				<div class="col wrap mt-0">
 					<main class="row load MainContent" id="js-content">
@@ -106,11 +102,11 @@
 			gtag('config', 'UA-118288277-1');
 			// Facebook
 			(function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
-			fjs.parentNode.insertBefore(js, fjs);
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+				fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));
 		</script>		
 	</body>
