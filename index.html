@@ -38,15 +38,7 @@
 
 			ga('create', 'UA-118288277-1', {'allowAnchor': true});
 			ga('send', 'pageview', { 'page': location.pathname + location.search + location.hash});
-
-		
 		</script>
-<script language="javascript">
-    function fbshareCurrentPage()
-    {window.open("https://www.facebook.com/sharer/sharer.php?u="+escape(document.URL.substr(document.URL.indexOf('#') + 1))+"&t="+document.title, '', 
-    'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
-    return false; }
-</script>	
 	</head>
 	<body class="ejs">	
 		<div id="fb-root"></div>
@@ -64,8 +56,7 @@
 						</select>
 					</nav>
 					<div class="col-6 col-md-1 order-2 order-md-3 p-0 text-center">
-				<a href="javascript:fbshareCurrentPage()" target="_blank" alt="Share on Facebook">Facebook</a>
-
+						<div class="fb-share-button" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
 					</div>
 				</header>
 				<div class="col wrap mt-0">
