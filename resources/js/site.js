@@ -33,6 +33,7 @@ $(document).ready(function() {
     if (window.location.hash) {
         setTimeout(ContentToLoad, 10);
     }else{
+        $('body').addClass('StartPage');
         $("#js-content").load('partials/start.html');        
     }
     // Hash Changes
@@ -46,11 +47,13 @@ $(document).ready(function() {
     function ContentToLoad() {
         var hash = document.URL.substr(document.URL.indexOf('#') + 1);
         // For Google Analytics
-        ga('send', 'pageview', location.pathname + '#' + hash);
+        // ga('send', 'pageview', location.pathname + '#' + hash);
         if(hash in monsterPages){
-            $('#monsters option[value="' + hash + '"]').attr("selected", "selected");
+            $('#monsters option[value="' + hash + '"]').attr("selected", "selected");   
             // Monster Page
-            $("#js-content").load('partials/search.html');
+            if ($("body").hasClass("SearchPage")) {}else{
+                $("#js-content").load('partials/search.html');
+            }
             $.getScript('pages/' + hash + '.js', function() {
                 function LoadMonsterPage() {
                     $('[data-item="name"]').append(name);
@@ -84,11 +87,19 @@ $(document).ready(function() {
                     progress(meter);
                 }
                 setTimeout(LoadMonsterPage, 100);
+                // 
+                $('body').removeClass('StartPage');
+                $('body').removeClass('NormalPage');
+                $('body').addClass('SearchPage');                 
             });
         } else if (hash in normalPages){
             // Normal Page
             $("#js-content").load('pages/html/'+hash+'.html');
             if(jQuery.inArray(hash, monsterPages) !== -1){}
+            $('body').removeClass('StartPage');
+            $('body').removeClass('SearchPage');
+            $('body').addClass('NormalPage');
+
             $('.chosen-single span').html('Pick a Monster');
             $.each(normalPages, function(file, name) {
                 if (hash == file) {
@@ -109,6 +120,7 @@ $(document).ready(function() {
         event.preventDefault();
         $('body').addClass('StartPage');
         $('body').removeClass('SearchPage');
+        $('body').removeClass('NormalPage');        
         var uri = window.location.toString();
         if (uri.indexOf("#") > 0) {
             document.title = siteName;
