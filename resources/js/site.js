@@ -39,9 +39,7 @@ $(document).ready(function() {
     // Hash Changes
     window.onhashchange = function () {
         setTimeout(ContentToLoad, 100);
-        $("html, body").animate({
-            scrollTop: 0
-        }, contentFade );
+        setTimeout(scrollTop, 10);
     }
     // What to load Function
     function ContentToLoad() {
@@ -128,6 +126,13 @@ $(document).ready(function() {
             $("#js-content").load('partials/start.html');
             var clean_uri = uri.substring(0, uri.indexOf("#"));
             window.history.replaceState({}, document.title, clean_uri);
+            setTimeout(scrollTop, 10);
         }
     });
+    // 
+    function scrollTop() {
+        $("html, body").animate({
+            scrollTop: 0
+        }, contentFade).delay(200);
+    }
 });

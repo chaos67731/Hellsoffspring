@@ -1,9 +1,11 @@
 /* Basic */
 html{
-  background: rgb(78,78,78)
+  background: rgb(78,78,78);
+  background: #4b1d1d;
 }
 body{
   background-image: url(/resources/img/site/background-3.jpg);
+  background-attachment: fixed;
   font-family: Verdana, Geneva, sans-serif;
   font-size: 20px;
 }
