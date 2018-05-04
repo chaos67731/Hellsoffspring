@@ -56,7 +56,7 @@ $(document).ready(function() {
             }
             $.getScript('pages/' + hash + '.js', function() {
                 function LoadMonsterPage() {
-                    $('[data-item="name"]').append(name);
+                    $('[data-item="name"]').html(name);
                     $('[data-item="img"]').html('<img src="/monsters/'+img.trim()+'" class="img" title="The '+name.trim()+'" alt="'+name.trim()+'"/>');
                     $('[data-item="meter"]').html(meter.trim()+'%');
                     $('[data-item="description"]').hide().html(description).delay(contentFade).slideDown(1000);

@@ -1,8 +1,7 @@
 self.addEventListener('fetch', function(event) {
-
+	document.addEventListener('touchstart', handler, true);
 });
 
-document.addEventListener('touchstart', onTouchStart, {passive: true});
 
 // self.addEventListener('install', function(e) {
 //   e.waitUntil(
