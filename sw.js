@@ -2,6 +2,8 @@ self.addEventListener('fetch', function(event) {
 
 });
 
+document.addEventListener('touchstart', onTouchStart, {passive: true});
+
 // self.addEventListener('install', function(e) {
 //   e.waitUntil(
 //     caches.open('the-magic-cache').then(function(cache) {
