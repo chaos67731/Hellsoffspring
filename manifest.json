@@ -3,7 +3,7 @@
   "short_name": "Hell's Search",
   "display": "standalone",
   "orientation": "portrait",  
-  "start_url": "/",
+  "start_url": "/?from=webApp",
   "theme_color": "#424242",
   "background_color": "#111111",
   "icons": [

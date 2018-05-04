@@ -1,5 +1,4 @@
 self.addEventListener('fetch', function(event) {
-	document.addEventListener('touchstart', handler, true);
 });
 
 
