@@ -49,8 +49,6 @@ $(document).ready(function() {
         if(hash in monsterPages){
             $('#monsters option[value="' + hash + '"]').attr("selected", "selected");   
             // Monster Page
-            $('head').append(meta);
-
             if ($("body").hasClass("SearchPage")) {}else{
                 $("#js-content").load('partials/search.html');
             }
@@ -137,21 +135,4 @@ $(document).ready(function() {
             scrollTop: 0
         }, contentFade).delay(200);
     }
-    var meta = `
-        <meta property="og:title" content="Hell's Offspring" />
-        <meta property="og:description" content="Search for monsters from around the world." />
-        <meta property="og:url" content="https://hellsoffspring.com/" />
-        <meta property="og:site_name" content="HellsOffspring.com/" />
-        <meta property="og:image" content="https://hellsoffspring.com/preview.jpg" />blank
-    `;
-
-
-
-
-
-
-
-
-
-
 });
