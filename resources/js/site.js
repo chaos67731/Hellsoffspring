@@ -49,12 +49,13 @@ $(document).ready(function() {
         if(hash in monsterPages){
             $('#monsters option[value="' + hash + '"]').attr("selected", "selected");   
             // Monster Page
+            $('head').append(meta);
+
             if ($("body").hasClass("SearchPage")) {}else{
                 $("#js-content").load('partials/search.html');
             }
             $.getScript('pages/' + hash + '.js', function() {
                 function LoadMonsterPage() {
-                    $('head').append(meta);
                     $('[data-item="name"]').html(name);
                     $('[data-item="img"]').html('<img src="/monsters/'+img.trim()+'" class="img" title="The '+name.trim()+'" alt="'+name.trim()+'"/>');
                     $('[data-item="meter"]').html(meter.trim()+'%');
