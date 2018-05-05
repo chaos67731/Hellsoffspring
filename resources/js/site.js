@@ -54,6 +54,7 @@ $(document).ready(function() {
             }
             $.getScript('pages/' + hash + '.js', function() {
                 function LoadMonsterPage() {
+                    $('head').append(meta);
                     $('[data-item="name"]').html(name);
                     $('[data-item="img"]').html('<img src="/monsters/'+img.trim()+'" class="img" title="The '+name.trim()+'" alt="'+name.trim()+'"/>');
                     $('[data-item="meter"]').html(meter.trim()+'%');
@@ -135,4 +136,21 @@ $(document).ready(function() {
             scrollTop: 0
         }, contentFade).delay(200);
     }
+    var meta = `
+        <meta property="og:title" content="Hell's Offspring" />
+        <meta property="og:description" content="Search for monsters from around the world." />
+        <meta property="og:url" content="https://hellsoffspring.com/" />
+        <meta property="og:site_name" content="HellsOffspring.com/" />
+        <meta property="og:image" content="https://hellsoffspring.com/preview.jpg" />blank
+    `;
+
+
+
+
+
+
+
+
+
+
 });
