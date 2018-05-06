@@ -41,10 +41,25 @@
 		</script>
 		<script>
 
-var url = 'http://hellsoffspring.com/#Minotaur';
-var title = 'Minotaur Rock';
-var description = 'Minotaur Minotaur Minotaur Minotaur';
-var image = 'http://hellsoffspring.com/monsters/Minotaur.jpg';
+
+	var title = '';
+	var description = '';
+	var image = '';
+	switch(val)
+	{
+		case 'Tiberius':
+				title = ' is wise like Yoda!';
+				description = 'Congratulations! is the champion of the StarTrek geekhood - and nobody can beat him. Or ... ? Click to play and prove to the that you are as good as  him!';
+				image = 'http://drib.tech/fbsharetest/quiz_yoda.jpg';
+			break;
+		default:
+				title = ' is wise like Jar Jar Binks!';
+				description = 'is the champion of the StarTrek geekhood - NOT! Click to play and prove to the that anybody is better then him!';
+				image = 'http://drib.tech/fbsharetest/quiz_jar_jar_binks.jpg';
+			break;
+	}
+
+
 
 
 		  window.fbAsyncInit = function() {
