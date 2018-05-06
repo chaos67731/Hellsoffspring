@@ -13,11 +13,11 @@
 		<meta property="fb:app_id" content="192600191363440" />
 		<meta property="og:locale" content="en_US" />
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Hell's Offspring" />
+<!-- 		<meta property="og:title" content="Hell's Offspring" />
 		<meta property="og:description" content="Search for monsters from around the world." />
 		<meta property="og:url" content="https://hellsoffspring.com/" />
 		<meta property="og:site_name" content="HellsOffspring.com/" />
-		<meta property="og:image" content="https://hellsoffspring.com/preview.jpg" />
+		<meta property="og:image" content="https://hellsoffspring.com/preview.jpg" /> -->
 		<!-- Style -->
 		<link rel="stylesheet" href="resources/css/plugin.css?=5022008" />
 		<link rel="stylesheet" href="resources/css/site.css?=5022008" />		
@@ -39,6 +39,52 @@
 			ga('create', 'UA-118288277-1', {'allowAnchor': true});
 			ga('send', 'pageview', { 'page': location.pathname + location.search + location.hash});
 		</script>
+		<script>
+
+var url = 'http://hellsoffspring.com/#Minotaur';
+var title = 'Minotaur Rock';
+var description = 'Minotaur Minotaur Minotaur Minotaur';
+var image = 'http://hellsoffspring.com/monsters/Minotaur.jpg';
+
+
+		  window.fbAsyncInit = function() {
+			FB.init({
+			  appId            : '192600191363440',
+			  autoLogAppEvents : true,
+			  xfbml            : true,
+			  version          : 'v2.10'
+			});
+			FB.AppEvents.logPageView();
+		  };
+		 
+		  (function(d, s, id){
+			 var js, fjs = d.getElementsByTagName(s)[0];
+			 if (d.getElementById(id)) {return;}
+			 js = d.createElement(s); js.id = id;
+			 js.src = "//connect.facebook.net/en_US/sdk.js";
+			 fjs.parentNode.insertBefore(js, fjs);
+		   }(document, 'script', 'facebook-jssdk'));
+		</script>
+		<script>
+		function shareOverrideOGMeta(overrideLink, overrideTitle, overrideDescription, overrideImage)
+		{
+			FB.ui({
+				method: 'share_open_graph',
+				action_type: 'og.shares',
+				action_properties: JSON.stringify({
+					object: {
+						'og:url': overrideLink,
+						'og:title': overrideTitle,
+						'og:description': overrideDescription,
+						'og:image': overrideImage
+					}
+				})
+			},
+			function (response) {
+			// Action after response
+			});
+		}
+		</script>		
 	</head>
 	<body class="ejs">	
 		<div id="fb-root"></div>
