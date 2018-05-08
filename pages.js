@@ -3,13 +3,13 @@ var monsterPages = {
     Cerberus: "Cerberus",
     Dragon: "Dragon",
     Minotaur: "Minotaur",
+    Siren:  "Siren",
     Skinwalker: "Skinwalker",
     Vampire: "Vampire",
-    Siren:  "Siren",
     Wendigo: "Wendigo",
     WeepingAngel: "Weeping Angel",
+    Werewolves: "Werewolves",
     Zombie: "Zombie",
-    
 };
 
 
