@@ -4,6 +4,7 @@
   "display": "standalone",
   "orientation": "portrait",  
   "start_url": "/?from=webApp",
+  // "start_url": "/webApp.html?from=webApp",
   "theme_color": "#424242",
   "background_color": "#111111",
   "icons": [
