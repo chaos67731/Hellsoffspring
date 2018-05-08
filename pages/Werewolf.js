@@ -1,8 +1,8 @@
 var name = `
-    Werewolve
+    Werewolf
 `;
 var img = `
-    blank.jpg
+Werewolf.jpg
 `;
 var meter = `
     75
