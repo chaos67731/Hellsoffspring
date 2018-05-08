@@ -9,13 +9,16 @@
 	<script type="text/javascript">
 	$(document).ready(function() {
 		$.each(monsterPages, function(file, name) {
-			$('body').append('<div>https://hellsoffspring.com/#'+file+'</div>');
+			$('#map').append('<div>https://hellsoffspring.com/#'+file+'</div>');
 		});	
 		$.each(normalPages, function(file, name) {
-			$('body').append('<div>https://hellsoffspring.com/#'+file+'</div>');
+			$('#map').append('<div>https://hellsoffspring.com/#'+file+'</div>');
 		});		
 	});	
 	</script>	
 </head>
-<body></body>
+<body>
+	<div>https://hellsoffspring.com/</div>
+	<div id="map"></div>
+</body>
 </html>
