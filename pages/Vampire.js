@@ -8,7 +8,8 @@
     76
     `;
     var description = `
-    <p>A vampire is a being from folklore that live off blood of the living. In European folklore, vampires are the living dead that often cause mischief or deaths in the in the places that they wander.They usually hunt around places with alot of people. It is rare for a vampire to be alone they usually have a pack thay they go back to. They hunt alone but they do not live alone. They take orders from the alpha vampire to if that one is killed the other vampires wont know what to do and they will stand there and starve.</p>
+    <p>A vampire is a being from folklore that live off blood of the living. In European folklore, vampires are the living dead that often cause mischief or deaths in the in the places that they wander.They usually hunt around places with a lot of people. It is rare for a vampire to be alone they usually have a pack that they go back to. They hunt alone but they do not live alone. They take orders from the alpha vampire to if that one is killed the other vampires don't know what to do and they will stand there and starve.
+    </p>
 
     <p>They are not out during the day because they sun burns their skin. They are night dwellers and if the pack needs more vampires some of the pack will go out and capture people to turn into vamires. The way they turn people into vampires is by making them drink their blood.</p>
     `;
