@@ -8,7 +8,8 @@
     83
   `;
   var description = `
-    <p>The wendigo is a tall pail creature that has long limbs and super speed. The wendigo started off as human but it was left to starve in the forest finally turning to cannibalism eating all its friends and finally mutating into what it is now a wendigo. They are great hunters at day but they are better at night.</p> 
+    <p>The wendigo is a tall pail creature that has long limbs and super speed. The wendigo started off as human but it was left to starve in the forest finally turning to cannibalism eating all its friends and finally mutating into what it is now a wendigo. They are great hunters at day but they are better at night.
+    </p> 
     <p>After it is mutated it can not turn back and keeps on the trail of cannibalism. The wendigo will hunt people out in the first catching and hiding them somewhere quite but keeping them alive because it knows that it might not get another meal in a while.</p> 
   `;
   var lives = `
