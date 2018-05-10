@@ -17,10 +17,11 @@ $(document).ready(function() {
     // The Year
     $('[data-item="year"]').html(year); 
     // Load the dropdown and make it nice
-    $.each(monsterPagesNew, function(page) {
+    sortedmonsterPages.sort(compare);
+    $.each(sortedmonsterPages, function(page) {
         $('#monsters').append(`
-          <option value="${monsterPagesNew[page].page}">
-            ${monsterPagesNew[page].text}
+          <option value="${sortedmonsterPages[page].page}">
+            ${sortedmonsterPages[page].text}
           </option>
         `);
     }); 
@@ -161,11 +162,12 @@ $(document).ready(function() {
             </a>
         `);
     };
-
-
-
-
- 
- 
-
 });
+
+function compare(a,b) {
+    if (a.page < b.page)
+        return -1;
+    if (a.page > b.page)
+        return 1;
+        return 0;
+};
