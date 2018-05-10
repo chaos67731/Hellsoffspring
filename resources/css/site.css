@@ -230,3 +230,38 @@ div#accordion {
   padding: 10px 0;
   border-bottom: 1px solid #ccc;
 }
+/* Random Monster Block */
+.randomMonsterBlock {
+  height: 140px;
+  margin: 15px 0;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  transition: all 0.5s ease;
+}
+.randomMonsterBlock:hover{
+  color: #fff;
+}
+
+.randomMonsterBlock div {
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: all 0.5s ease;
+}
+
+.randomMonsterBlock:hover div{
+    background: rgba(0, 0, 0, .75);
+
+}
+
+
+
+
+
+
+

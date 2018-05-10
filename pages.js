@@ -1,17 +1,16 @@
 // Make sure you add them alphabetically 
-var monsterPages = {
-    Cerberus: "Cerberus",
-    Dragon: "Dragon",
-    Minotaur: "Minotaur",
-    Siren:  "Siren",
-    Skinwalker: "Skinwalker",
-    Vampire: "Vampire",
-    Wendigo: "Wendigo",
-    WeepingAngel: "Weeping Angel",
-    Werewolf: "Werewolf",
-    Zombie: "Zombie",
-};
-
+var monsterPagesNew = [
+    {page: 'Cerberus', text: 'Cerberus', img: 'Cerberus.jpg'},
+    {page: 'Dragon', text: 'Dragon', img: 'Dragon.jpg'},
+    {page: 'Minotaur', text: 'Minotaur', img: 'Minotaur.jpg'},
+    {page: 'Siren', text: 'Siren', img: 'Siren.jpg'},
+    {page: 'Skinwalker', text: 'Skinwalker', img: 'Skinwalker.jpg'},
+    {page: 'Vampire', text: 'Vampire', img: 'Vampire.jpg'},
+    {page: 'Wendigo', text: 'Wendigo', img: 'Wendigo.jpg'},
+    {page: 'WeepingAngel', text: 'Weeping Angel', img: 'WeepingAngel.jpg'},
+    {page: 'Werewolf', text: 'Werewolf', img: 'Werewolf.jpg'},
+    {page: 'Zombie', text: 'Zombie', img: 'Zombie.jpg'},
+];
 
 var normalPages = {
     About: "About",

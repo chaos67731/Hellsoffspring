@@ -17,10 +17,17 @@ $(document).ready(function() {
     // The Year
     $('[data-item="year"]').html(year); 
     // Load the dropdown and make it nice
-
-    $.each(monsterPages, function(file, name) {
-        $('#monsters').append('<option class="view" value="' + file + '">' + name + '</option>');
-    });
+    $.each(monsterPagesNew, function(page) {
+        $('#monsters').append(`
+          <option value="${monsterPagesNew[page].page}">
+            ${monsterPagesNew[page].text}
+          </option>
+        `);
+    }); 
+    // Make array Random
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * Math.floor(max));
+    }    
     $("#monsters").chosen({});
     // When Dropdown Used    
     $('[class="DropDown"]').change(function() {
@@ -33,26 +40,32 @@ $(document).ready(function() {
     // If Site Has Hash // Else Load home page
     if (window.location.hash) {
         setTimeout(ContentToLoad, 10);
+        setTimeout(RandomMonsterList, 10);
     }else{
         $('body').addClass('StartPage');
-        $("#js-content").load('partials/start.html');        
+        $("#js-content").load('partials/start.html');
+        setTimeout(RandomMonsterList, 10);
     }
     // Hash Changes
     window.onhashchange = function () {
         setTimeout(ContentToLoad, 100);
         setTimeout(scrollTop, 10);
+        setTimeout(RandomMonsterList, 10);
     }
     // What to load Function
     function ContentToLoad() {
         var hash = document.URL.substr(document.URL.indexOf('#') + 1);
         // For Google Analytics
         ga('send', 'pageview', location.pathname + '#' + hash);
-        if(hash in monsterPages){
+        isThereMonster = monsterPagesNew.filter(vendor => (vendor.page === hash));
+
+        // if(hash in monsterPages){
+        if (isThereMonster.length === 1){
             $('#monsters option[value="' + hash + '"]').attr("selected", "selected");   
             // Monster Page
             if ($("body").hasClass("SearchPage")) {}else{
                 $("#js-content").load('partials/search.html');
-            }
+            };
             $.getScript('pages/' + hash + '.js', function() {
                 function LoadMonsterPage() {
                     $('[data-item="name"]').html(name);
@@ -64,11 +77,7 @@ $(document).ready(function() {
                     $('[data-item="eats"]').hide().html(eats).delay(contentFade).slideDown(contentFade);
                     $('.DangerScaleValue').attr("id", 'percent' + meter);
                     // 
-                    $.each(monsterPages, function(file, name) {
-                        if (hash == file) {
-                            document.title = name + ' - ' + siteName;
-                        }        
-                    });                    
+                    document.title = name + ' - ' + siteName;                  
                     // chosen-focus-input
                     $('.chosen-single span').html('Learning About: <strong>' + name + '</strong>');
                     // Danger Meter
@@ -94,7 +103,7 @@ $(document).ready(function() {
         } else if (hash in normalPages){
             // Normal Page
             $("#js-content").load('pages/html/'+hash+'.html');
-            if(jQuery.inArray(hash, monsterPages) !== -1){}
+            // if(jQuery.inArray(hash, monsterPages) !== -1){}
             $('body').removeClass('StartPage');
             $('body').removeClass('SearchPage');
             $('body').addClass('NormalPage');
@@ -137,7 +146,26 @@ $(document).ready(function() {
         }, contentFade).delay(200);
     }
 
+    // The Random Monster List
+    function RandomMonsterList() {
+        var theRandomMonsterList = monsterPagesNew.sort( function() { return 0.5 - Math.random() } );
+        $( "#randomMonsters" ).after().html(`
+            <a href="#${theRandomMonsterList[0].page}" class="col-12 col-md-3 randomMonsterBlock" style="background-image: url(/monsters/${theRandomMonsterList[0].img})">
+              <div>${theRandomMonsterList[0].text}</div>
+            </a>
+            <a href="#${theRandomMonsterList[1].page}" class="col-12 col-md-3 randomMonsterBlock" style="background-image: url(/monsters/${theRandomMonsterList[1].img})">
+              <div>${theRandomMonsterList[1].text}</div>
+            </a>
+            <a href="#${theRandomMonsterList[2].page}" class="col-12 col-md-3 randomMonsterBlock" style="background-image: url(/monsters/${theRandomMonsterList[2].img})">
+              <div>${theRandomMonsterList[2].text}</div>
+            </a>
+        `);
+    };
 
 
+
+
+ 
+ 
 
 });

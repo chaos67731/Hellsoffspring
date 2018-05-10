@@ -17,9 +17,16 @@
 </div>
 <script type="text/javascript">
 $(document).ready(function() {
-	$.each(monsterPages, function(file, name) {
-	$('#monsterSitemap').append('<span class="col-4 mb-3"><a href="/#' + file + '">' + name + '</a></span>');
-	});	
+    $.each(monsterPagesNew, function(page) {
+        $('#monsterSitemap').append(`
+          <span class="col-4 mb-3">
+	          <a href="/#${monsterPagesNew[page].page}">
+	          	${monsterPagesNew[page].text}
+	          </a>
+          </span>
+        `);
+    });
+
 	$.each(normalPages, function(file, name) {
 		$('#pagesSitemap').append('<span class="col-4 mb-3"><a href="/#' + file + '">' + name + '</a></span>');
 	});		

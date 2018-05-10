@@ -1,4 +1,14 @@
-<script src="resources/js/bootstrap.min.js?=5022008"></script>
+<script>
+	var head = document.getElementsByTagName('head')[0];
+	var s1 = document.createElement("script");
+	s1.type = "text/javascript";
+	s1.src = "resources/js/bootstrap.min.js?=5022008";
+	head.appendChild(s1);
+
+	$(function() {
+		$( "#MonsterCount" ).html( monsterPagesNew.length );
+	});
+</script>
 
 <div id="accordion">
 	<button class="accordionLink" data-toggle="collapse" data-target="#collapseOne">
@@ -27,15 +37,6 @@
 	</button>
 
 	<div id="collapseThree" class="collapse accordionContent" data-parent="#accordion">
-		<script type="text/javascript">
-			$(function() {
-				var MonsterCount = 0
-				$.each(monsterPages, function(index, value) {
-				    MonsterCount++;
-				})
-				$( "#MonsterCount" ).html( MonsterCount );
-			});
-		</script>
 		At the momnet we have <span id="MonsterCount"></span>, and will be adding more over time.  Keep checking back for more. 
 	</div>
 
