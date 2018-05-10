@@ -151,14 +151,14 @@ $(document).ready(function() {
     function RandomMonsterList() {
         var theRandomMonsterList = monsterPagesNew.sort( function() { return 0.5 - Math.random() } );
         $( "#randomMonsters" ).after().html(`
-            <a href="#${theRandomMonsterList[0].page}" class="col-12 col-md-3 randomMonsterBlock" style="background-image: url(/monsters/${theRandomMonsterList[0].img})">
-              <div>${theRandomMonsterList[0].text}</div>
-            </a>
             <a href="#${theRandomMonsterList[1].page}" class="col-12 col-md-3 randomMonsterBlock" style="background-image: url(/monsters/${theRandomMonsterList[1].img})">
               <div>${theRandomMonsterList[1].text}</div>
             </a>
-            <a href="#${theRandomMonsterList[2].page}" class="col-12 col-md-3 randomMonsterBlock" style="background-image: url(/monsters/${theRandomMonsterList[2].img})">
-              <div>${theRandomMonsterList[2].text}</div>
+            <a href="#${theRandomMonsterList[3].page}" class="col-12 col-md-3 randomMonsterBlock" style="background-image: url(/monsters/${theRandomMonsterList[3].img})">
+              <div>${theRandomMonsterList[3].text}</div>
+            </a>
+            <a href="#${theRandomMonsterList[9].page}" class="col-12 col-md-3 randomMonsterBlock" style="background-image: url(/monsters/${theRandomMonsterList[9].img})">
+              <div>${theRandomMonsterList[9].text}</div>
             </a>
         `);
     };
