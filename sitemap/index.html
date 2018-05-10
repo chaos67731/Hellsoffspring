@@ -8,9 +8,11 @@
 	<script src="../pages.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
-		$.each(monsterPages, function(file, name) {
-			$('#map').append('<div>https://hellsoffspring.com/#'+file+'</div>');
-		});	
+		$.each(monsterPagesNew, function(page) {
+		    $('#map').append(`
+		      <div>https://hellsoffspring.com/#${monsterPagesNew[page].page}</div>
+		    `);
+		});
 		$.each(normalPages, function(file, name) {
 			$('#map').append('<div>https://hellsoffspring.com/#'+file+'</div>');
 		});		
