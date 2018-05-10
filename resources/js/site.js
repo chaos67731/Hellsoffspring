@@ -17,6 +17,7 @@ $(document).ready(function() {
     // The Year
     $('[data-item="year"]').html(year); 
     // Load the dropdown and make it nice
+
     $.each(monsterPages, function(file, name) {
         $('#monsters').append('<option class="view" value="' + file + '">' + name + '</option>');
     });
@@ -135,4 +136,8 @@ $(document).ready(function() {
             scrollTop: 0
         }, contentFade).delay(200);
     }
+
+
+
+
 });
