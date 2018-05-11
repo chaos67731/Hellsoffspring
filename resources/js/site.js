@@ -72,7 +72,7 @@ $(document).ready(function() {
                     $('[data-item="name"]').html(name);
                     $('[data-item="img"]').html('<img src="/monsters/'+img.trim()+'" class="img" title="The '+name.trim()+'" alt="'+name.trim()+'"/>');
                     $('[data-item="meter"]').html(meter.trim()+'%');
-                    $('[data-item="description"]').hide().html(description).delay(contentFade).slideDown(1000);
+                    $('[data-item="description"]').hide().html(description).delay(contentFade).slideDown(0);
                     $('[data-item="lives"]').hide().html(lives).delay(contentFade).slideDown(contentFade);
                     $('[data-item="kill"]').hide().html(kill).delay(contentFade).slideDown(contentFade);
                     $('[data-item="eats"]').hide().html(eats).delay(contentFade).slideDown(contentFade);
