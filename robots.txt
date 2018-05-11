@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /pages/
+Disallow: /partials/
+Disallow: /resources/
+Disallow: /sitemap/
+Disallow: /deploy.php
+Disallow: /deploy.sh
