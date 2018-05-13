@@ -21,7 +21,11 @@
   background-repeat: no-repeat;
   background-position: center;
   height: 90px;
+  transition: var(--transition);
 }
+  #logo:hover{
+    -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(400%)
+  }
 #logoTitle{
   display: inline-block;
   width: 100%;

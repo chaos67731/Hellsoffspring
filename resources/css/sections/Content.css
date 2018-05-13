@@ -71,6 +71,15 @@
       background: rgba(0, 0, 0, .75);
   }
 
+  @media(max-width: 767px) {
+    .randomMonsterBlock{
+      transform: scale(0.9);
+    }
+    .randomMonsterBlock:hover{
+      transform: scale(1);
+    }    
+  }
+
 /*
   Accordion Link
 */
