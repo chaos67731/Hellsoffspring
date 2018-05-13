@@ -1,0 +1,29 @@
+{
+  "name": "hellsoffspring",
+  "version": "1.0.0",
+  "description": "Use : live-server",
+  "main": "index.html",
+  "dependencies": {
+    "live-server": "^1.2.0",
+    "node-sass": "^4.9.0",
+    "parallelshell": "^3.0.2",
+    "purify-css": "^1.2.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test",
+    "scss": "node-sass --watch resources/css/site.scss -o resources/css --output-style compressed",
+    "site": "live-server",
+    "start": "parallelshell \"node-sass --watch resources/css/site.scss -o resources/css --output-style compressed\" \"live-server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaos67731/Hellsoffspring.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chaos67731/Hellsoffspring/issues"
+  },
+  "homepage": "https://github.com/chaos67731/Hellsoffspring#readme"
+}
