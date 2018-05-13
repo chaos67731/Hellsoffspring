@@ -7,3 +7,9 @@
   color: var(--cLight);
   padding: var(--baseSize) 0;
 }
+
+.footer .nav-link{
+	padding: 0;
+	margin: calc(var(--baseSize) / 2) 0;
+	font-size: calc(var(--baseSize) * 4);
+}
