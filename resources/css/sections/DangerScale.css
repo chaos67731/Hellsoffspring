@@ -1,0 +1,51 @@
+/* 
+  Progress DangerScale 
+*/
+.DangerScaleWrap{
+  position: relative;
+  text-align: center;
+}
+.DangerScale {
+  background: transparent;
+  margin: 0 auto;
+  width: 220px;
+  height: 220px;
+  display: inline-block;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  text-align: center;
+}
+.DangerScaleValue {
+  fill: none;
+}
+.DangerScaleMeter {
+  stroke: var(--cGray);
+  fill: rgba(0, 0, 0, 0.64);
+}
+.DangerScaleValue {
+  stroke: #69f23c ;
+  stroke-linecap: round;
+}
+.MeterText {
+  position: absolute;
+  top: calc(50% - 0.5em);
+  left: 0;
+  right: 0;
+  font-size: 40px;
+  font-weight: 900;
+}
+/* 
+  SVG Colors 
+*/
+#percent1 , #percent2 , #percent3 , #percent4 , #percent5 , #percent6 , #percent7 , #percent8 , #percent9, [id*="percent1"], [id*="percent2"],[id*="percent3"] {
+  stroke: var(--cGreen);
+}
+[id*="percent4"],[id*="percent5"]{
+  stroke: var(--cYello);
+}
+[id*="percent6"],[id*="percent7"]{
+  stroke: var(--cOrange);
+}
+[id*="percent8"],[id*="percent9"], #percent100{
+  stroke: var(--cRed);
+}

@@ -1,0 +1,25 @@
+/*VARS*/
+:root {
+  --transparentBK: rgba(0, 0, 0, 0.5);
+  --cBlack: #000;
+  --cDark: rgb(78,78,78);
+  --cLight: #fff;
+  --cGreen: #69f23c;
+  --cYello: #f2cb3c;
+  --cOrange: #f2a13c;
+  --cRed: #f13c59;
+  --cGray: #e6e6e6;
+
+
+
+  --transition: all 0.5s ease;;
+
+  --Transition: all 0.5s ease;
+
+  --baseSize: 4px;
+  --baseSizeSmall: 16px;
+  --baseSizeNormal: 20px;
+  --baseSizeLarge: 20px;
+
+  --blank: blank;
+}

@@ -1,0 +1,28 @@
+/*
+ Site Header
+*/
+.SiteHeader {
+  position: sticky;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  top: 0px;
+  background: var(--cBlack);
+  z-index: 10;
+}
+#logo {
+  font-size: var(--baseSizeNormal);
+  line-height: 1;
+  margin: 0;
+  text-indent: -999999px;
+  background-image: url(/resources/img/site/MainLogo_W.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90px;
+}
+#logoTitle{
+  display: inline-block;
+  width: 100%;
+}

@@ -1,0 +1,40 @@
+/* Basic */
+html{
+  background: var(--cDark);
+}
+body{
+  background-image: url(/resources/img/site/background-3.jpg);
+  background-attachment: fixed;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: var(--baseSizeNormal);
+  line-height: calc(var(--baseSizeNormal) * 1.5)
+}
+a{transition: var(--transition);}
+/*
+ All Over
+*/
+.img{
+  max-width: 100%;
+}
+#app{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.wrap{
+  max-width: 1000px;
+  margin: var(--baseSizeNormal) auto;
+  color: white;
+  background: var(--transparentBK);
+  padding: 0 var(--baseSizeNormal);
+}
+/*
+ Main Style
+*/
+.MainWrap {
+  flex-grow: 1;
+}
+.MainContent {
+  padding-top: var(--baseSizeNormal);
+  padding-bottom: var(--baseSizeNormal);
+}

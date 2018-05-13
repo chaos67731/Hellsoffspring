@@ -1,0 +1,9 @@
+/*
+ Site Footer
+*/
+.footer {
+  text-align: center;
+  background: var(--transparentBK);
+  color: var(--cLight);
+  padding: var(--baseSize) 0;
+}
