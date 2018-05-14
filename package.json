@@ -6,8 +6,7 @@
   "dependencies": {
     "live-server": "^1.2.0",
     "node-sass": "^4.9.0",
-    "parallelshell": "^3.0.2",
-    "purify-css": "^1.2.5"
+    "parallelshell": "^3.0.2"
   },
   "devDependencies": {},
   "scripts": {
