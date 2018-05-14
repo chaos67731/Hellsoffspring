@@ -1,6 +1,6 @@
 {
   "name": "Hell's Offspring",
-  "short_name": "Hell's Search",
+  "short_name": "Hells Search",
   "display": "standalone",
   "orientation": "portrait",  
   "start_url": "/?from=webApp",
