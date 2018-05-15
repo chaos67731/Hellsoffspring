@@ -1,8 +1,18 @@
 $(document).ready(function() {
     // Run service Worker
-    navigator.serviceWorker && navigator.serviceWorker.register('./sw.js').then(function(registration) {
+     if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js', { scope: '/' })
+          .then(function(registration) {
+                console.log('Service Worker Registered');
+          });
+
+        navigator.serviceWorker.ready.then(function(registration) {
+           console.log('Service Worker Ready');
+        });
+      }
+    // navigator.serviceWorker && navigator.serviceWorker.register('./sw.js').then(function(registration) {
         // console.log('Excellent, registered with scope: ', registration.scope);
-    });    
+    // });    
     // Vars 1: site hash 2: the year 3: Page Title
     var hash = document.URL.substr(document.URL.indexOf('#') + 1),
         year = new Date().getFullYear(),
