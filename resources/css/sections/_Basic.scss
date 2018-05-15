@@ -16,6 +16,9 @@ a{transition: var(--transition);}
 .img{
   max-width: 100%;
 }
+p:last-of-type {
+    margin-bottom: 0;
+}
 #app{
   min-height: 100vh;
   display: flex;
@@ -28,6 +31,7 @@ a{transition: var(--transition);}
   background: var(--transparentBK);
   padding: 0 var(--baseSizeNormal);
 }
+
 /*
  Main Style
 */
