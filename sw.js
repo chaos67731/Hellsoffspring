@@ -5,14 +5,16 @@ self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(cacheName).then(cache => {
       return cache.addAll([
-        // `/`,
-        // `/index.html?timestamp=${timeStamp}`,
-        // `/resources/css/main.css?timestamp=${timeStamp}`,
-        // `/resources/css/site.css?timestamp=${timeStamp}`,
-        // `/resources/js/jquery.js?timestamp=${timeStamp}`,
-        // `/resources/js/plugins.js?timestamp=${timeStamp}`,
-        // `/pages.js?timestamp=${timeStamp}`,
-        // `/resources/js/site.js?timestamp=${timeStamp}`
+        // Site
+        `/`,
+        `/index.html?timestamp=${timeStamp}`,
+        // Style
+        `/resources/css/site.css?timestamp=${timeStamp}`,
+        // Js
+        `/resources/js/jquery.js?timestamp=${timeStamp}`,
+        `/resources/js/plugins.js?timestamp=${timeStamp}`,
+        `/pages.js?timestamp=${timeStamp}`,
+        `/resources/js/site.js?timestamp=${timeStamp}`
       ])
           .then(() => self.skipWaiting());
     })
