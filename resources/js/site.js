@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    addEventListener('touchstart', this.callPassedFuntion, { passive: true })
     // Run service Worker
      if('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/sw.js', { scope: '/' })
