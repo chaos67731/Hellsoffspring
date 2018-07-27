@@ -1,4 +1,4 @@
-// Make sure you add them alphabetically 
+// Make sure you add them alpshabetically 
 var monsterPagesNew = [
     {page: 'Zombie', text: 'Zombie', img: 'Zombie.jpg'},
     {page: 'WeepingAngel', text: 'Weeping Angel', img: 'WeepingAngel.jpg'},
@@ -12,6 +12,8 @@ var monsterPagesNew = [
     {page: 'Minotaur', text: 'Minotaur', img: 'Minotaur.jpg'},
     {page: 'Shapeshifter', text: 'Shapeshifter', img: 'Shapeshifter.jpg'},
     {page: 'Gargoyle', text: 'Gargoyle', img: 'Gargoyle.jpg'},
+    {page: 'Gremlin', text: 'Gremlin', img: 'Gremlin.jpg'},
+    {page: 'The-Devil', text: 'The Devil', img: 'Satan.jpg'},
 ];
 
 var sortedmonsterPages = monsterPagesNew;
