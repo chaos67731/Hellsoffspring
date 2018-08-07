@@ -1,21 +1,21 @@
 var name = `
-Mogwai
+Gremlin
 `;
 var img = `
-Mogwai.jpg
+Gremlin.jpg
 `;
 var meter = `
-15
+50
 `;
 var description = `
-<p>Gremlins are fluffy,short and cute . The Mogwai have certin rules that you must foolow or they will turn into a grimlin witch unlike the mogwai the are taller, more violent and are not so cute Rule 1 is Do not get it wet or it will multiply Rule two Do not feed affter mid night Because it will turn into the gremlin. .</p>
+<p>Gremlins are taller than the mogwai they are also scaly unlike the mogwai the are violent and they like to make mishtuf To make a gremlin you must have a mogwai first and the you have to feed it after midnight for then it will star the tranformation into a gremlin .</p>
 `;
 var lives = `
 The Mogwai and the grimlen come from space and they are supposedly made by scientist on a far away planet
 `;
 
 var kill = `
-<p> To kill a gremlin you most exspose it bright light. </p> 
+<p> To kill a gremlin you most exspose it bright light or fire it melts them into a goo . </p> 
 `;
 
 var eats = `
