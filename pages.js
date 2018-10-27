@@ -17,6 +17,7 @@ var monsterPagesNew = [
     {page: 'Mogwai', text: 'Mogwai', img: 'Mogwai.jpg'},
     {page: 'Animatronics', text: 'Animatronics', img: 'Animatronics.jpg'},
     {page: 'Unicorn', text: 'Unicorn', img: 'Unicorn.jpg'},
+    {page: 'Cthulhu', text: 'Cthulhu', img: 'Cthulhu.jpg'},
 ];
 
 var sortedmonsterPages = monsterPagesNew;
