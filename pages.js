@@ -17,12 +17,9 @@ var monsterPagesNew = [
     {page: 'Mogwai', text: 'Mogwai', img: 'Mogwai.jpg'},
     {page: 'Animatronics', text: 'Animatronics', img: 'Animatronics.jpg'},
     {page: 'Unicorn', text: 'Unicorn', img: 'Unicorn.jpg'},
-<<<<<<< HEAD
-    {page: 'Grim-reaper ', text: 'Grim-reaper', img: 'Death.jpg'},
-=======
     {page: 'Cthulhu', text: 'Cthulhu', img: 'Cthulhu.jpg'},
     {page: 'Grim-reaper', text: 'Grim-reaper', img: 'Death.jpg'},
->>>>>>> master
+    {page: 'Banshee', text: 'Banshee', img: 'Banshee.jpg'},
 ];
 
 var sortedmonsterPages = monsterPagesNew;
@@ -35,4 +32,4 @@ var normalPages = {
     WillRiter: "Will Riter",
     Sitemap: "Sitemap",
     Suggests: "Suggests A Monster",
- };
+ };  
