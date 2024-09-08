@@ -1,0 +1,1 @@
+import{j as t,a as o,T as s,C as r}from"./index-Bnf2xa4K.js";import{u as e}from"./page-Df6Uaths.js";import"./react-Bz49nljE.js";import"./firebase-0GKBlLtg.js";const c=function(){return e({title:"Tasks"}),t(r,{sx:{py:2},children:[o(s,{level:"h2",gutterBottom:!0,children:"Tasks"}),o(s,{children:"Coming soon..."})]})};export{c as Component};

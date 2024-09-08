@@ -1,0 +1,16 @@
+{
+  "name": "Dragon",
+  "category": "Mythical Creature",
+  "sections": {
+    "description": "A large, fire-breathing reptilian creature.",
+    "abilities": "Breathes fire, flies.",
+    "habitat": "Mountains and caves.",
+    "weaknesses": "Ice magic.",
+    "lore": "Dragons have been feared by many civilizations."
+  },
+  "images": [
+    "/images/null.png",
+    "/images/null.png",
+    "/images/null.png"
+  ]
+}

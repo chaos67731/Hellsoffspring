@@ -1,0 +1,28 @@
+{
+  "monsters": [
+    {
+      "name": "Dragon",
+      "description": "Mythical creatures are creatures that are not real, but are believed to exist in the world.",
+      "image": "/images/mythical-creatures.png",
+      "link": "/monsters/Dragon",
+      "category": ["Mythical Creature", "phoenix"],
+      "data_url": "/monsters/dragon.json"
+    },
+    {
+      "name": "Zombie",
+      "description": "Zombies are undead creatures that are brought back to life by magic.",
+      "image": "/images/zombie.png",
+      "link": "/monsters/Zombie",
+      "category": ["Undead", "Zombie"],
+      "data_url": "/monsters/zombie.json"
+    },
+    {
+      "name": "Vampire",
+      "description": "Vampires are undead creatures that are brought back to life by magic.",
+      "image": "/images/vampire.png",
+      "link": "/monsters/Vampire",
+      "category": ["Undead", "Vampire"],
+      "data_url": "/monsters/vampire.json"
+    }
+  ]
+}

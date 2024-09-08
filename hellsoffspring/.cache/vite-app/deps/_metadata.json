@@ -1,0 +1,130 @@
+{
+  "hash": "a5525eb1",
+  "configHash": "745843b8",
+  "lockfileHash": "0e3ac304",
+  "browserHash": "515c8a07",
+  "optimized": {
+    "react": {
+      "src": "../../../../../../../.yarn/berry/cache/react-npm-18.2.0-1eae08fee2-10.zip/node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "60cf3706",
+      "needsInterop": true
+    },
+    "@emotion/react/jsx-dev-runtime": {
+      "src": "../../../.yarn/__virtual__/@emotion-react-virtual-34d79653b6/5/.yarn/berry/cache/@emotion-react-npm-11.11.3-5802f4fe7f-10.zip/node_modules/@emotion/react/jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.browser.esm.js",
+      "file": "@emotion_react_jsx-dev-runtime.js",
+      "fileHash": "5710674f",
+      "needsInterop": false
+    },
+    "@emotion/react/jsx-runtime": {
+      "src": "../../../.yarn/__virtual__/@emotion-react-virtual-34d79653b6/5/.yarn/berry/cache/@emotion-react-npm-11.11.3-5802f4fe7f-10.zip/node_modules/@emotion/react/jsx-runtime/dist/emotion-react-jsx-runtime.browser.esm.js",
+      "file": "@emotion_react_jsx-runtime.js",
+      "fileHash": "0c708cbc",
+      "needsInterop": false
+    },
+    "@mui/icons-material": {
+      "src": "../../../.yarn/__virtual__/@mui-icons-material-virtual-3fec030645/5/.yarn/berry/cache/@mui-icons-material-npm-5.15.10-11fa9ba717-10.zip/node_modules/@mui/icons-material/esm/index.js",
+      "file": "@mui_icons-material.js",
+      "fileHash": "d276d09f",
+      "needsInterop": false
+    },
+    "@mui/joy": {
+      "src": "../../../.yarn/__virtual__/@mui-joy-virtual-41e2a79c7b/5/.yarn/berry/cache/@mui-joy-npm-5.0.0-beta.28-fe6be78e8d-10.zip/node_modules/@mui/joy/index.js",
+      "file": "@mui_joy.js",
+      "fileHash": "79e60ba9",
+      "needsInterop": false
+    },
+    "@mui/joy/styles": {
+      "src": "../../../.yarn/__virtual__/@mui-joy-virtual-41e2a79c7b/5/.yarn/berry/cache/@mui-joy-npm-5.0.0-beta.28-fe6be78e8d-10.zip/node_modules/@mui/joy/styles/index.js",
+      "file": "@mui_joy_styles.js",
+      "fileHash": "1b541fc8",
+      "needsInterop": false
+    },
+    "firebase/analytics": {
+      "src": "../../../../../../../.yarn/berry/cache/firebase-npm-10.8.0-7527ee7b52-10.zip/node_modules/firebase/analytics/dist/esm/index.esm.js",
+      "file": "firebase_analytics.js",
+      "fileHash": "82b641a3",
+      "needsInterop": false
+    },
+    "firebase/app": {
+      "src": "../../../../../../../.yarn/berry/cache/firebase-npm-10.8.0-7527ee7b52-10.zip/node_modules/firebase/app/dist/esm/index.esm.js",
+      "file": "firebase_app.js",
+      "fileHash": "17b9b61a",
+      "needsInterop": false
+    },
+    "firebase/auth": {
+      "src": "../../../../../../../.yarn/berry/cache/firebase-npm-10.8.0-7527ee7b52-10.zip/node_modules/firebase/auth/dist/esm/index.esm.js",
+      "file": "firebase_auth.js",
+      "fileHash": "78b5f748",
+      "needsInterop": false
+    },
+    "jotai": {
+      "src": "../../../.yarn/__virtual__/jotai-virtual-80411c6087/5/.yarn/berry/cache/jotai-npm-2.6.4-9f4bf61444-10.zip/node_modules/jotai/esm/index.mjs",
+      "file": "jotai.js",
+      "fileHash": "6ff31078",
+      "needsInterop": false
+    },
+    "jotai/utils": {
+      "src": "../../../.yarn/__virtual__/jotai-virtual-80411c6087/5/.yarn/berry/cache/jotai-npm-2.6.4-9f4bf61444-10.zip/node_modules/jotai/esm/utils.mjs",
+      "file": "jotai_utils.js",
+      "fileHash": "da0ce0b3",
+      "needsInterop": false
+    },
+    "notistack": {
+      "src": "../../../.yarn/__virtual__/notistack-virtual-c7fccf2b10/5/.yarn/berry/cache/notistack-npm-3.0.1-2b0e3bf24a-10.zip/node_modules/notistack/notistack.esm.js",
+      "file": "notistack.js",
+      "fileHash": "c806a4c9",
+      "needsInterop": false
+    },
+    "react-dom/client": {
+      "src": "../../../.yarn/__virtual__/react-dom-virtual-22fafa95af/5/.yarn/berry/cache/react-dom-npm-18.2.0-dd675bca1c-10.zip/node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "03d2a032",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../../.yarn/__virtual__/react-router-dom-virtual-5b40b23982/5/.yarn/berry/cache/react-router-dom-npm-6.22.0-be4574971f-10.zip/node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "85776eec",
+      "needsInterop": false
+    },
+    "react/jsx-runtime": {
+      "src": "../../../../../../../.yarn/berry/cache/react-npm-18.2.0-1eae08fee2-10.zip/node_modules/react/jsx-runtime.js",
+      "file": "react_jsx-runtime.js",
+      "fileHash": "1a0f3da3",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-X3PGVS4D": {
+      "file": "chunk-X3PGVS4D.js"
+    },
+    "chunk-BHAPBD45": {
+      "file": "chunk-BHAPBD45.js"
+    },
+    "chunk-X547HHIA": {
+      "file": "chunk-X547HHIA.js"
+    },
+    "chunk-4FD57BVO": {
+      "file": "chunk-4FD57BVO.js"
+    },
+    "chunk-EAR42CMV": {
+      "file": "chunk-EAR42CMV.js"
+    },
+    "chunk-7VLZMIRJ": {
+      "file": "chunk-7VLZMIRJ.js"
+    },
+    "chunk-2I7KULOH": {
+      "file": "chunk-2I7KULOH.js"
+    },
+    "chunk-NFISVTRL": {
+      "file": "chunk-NFISVTRL.js"
+    },
+    "chunk-EYYW6WPW": {
+      "file": "chunk-EYYW6WPW.js"
+    },
+    "chunk-LQ2VYIYD": {
+      "file": "chunk-LQ2VYIYD.js"
+    }
+  }
+}
